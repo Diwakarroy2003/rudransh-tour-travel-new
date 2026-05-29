@@ -6,11 +6,11 @@ const session = require("express-session");
 
 const mongoose = require("mongoose");
 const Enquiry = require("./models/enquiry");
-const Gallery = require("./models/Gallery");
-const Admin = require("./models/Admin");
-const Package = require("./models/Package");
-const Testimonial = require("./models/Testimonial");
-const HeroBanner = require("./models/HeroBanner");
+const Gallery = require("./models/gallery");
+const Admin = require("./models/admin");
+const Package = require("./models/package");
+const Testimonial = require("./models/testimonial");
+const HeroBanner = require("./models/heroBanner");
 
 const nodemailer = require("nodemailer");
 const multer = require("multer");
