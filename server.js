@@ -5,7 +5,7 @@ const path = require("path");
 const session = require("express-session");
 
 const mongoose = require("mongoose");
-const Enquiry = require("./models/Enquiry");
+const Enquiry = require("./models/enquiry");
 const Gallery = require("./models/Gallery");
 const Admin = require("./models/Admin");
 const Package = require("./models/Package");
