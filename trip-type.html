@@ -1,0 +1,1535 @@
+<!doctype html>
+<html lang="en">
+
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/jquery-ui.css" rel="stylesheet">
+    <!-- Bootstrap Icon CSS -->
+    <link href="assets/css/bootstrap-icons.css" rel="stylesheet">
+    <!-- CSS -->
+    <link href="assets/css/animate.min.css" rel="stylesheet">
+    <!-- FancyBox CSS -->
+    <link href="assets/css/jquery.fancybox.min.css" rel="stylesheet">
+    <!-- Swiper slider CSS -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!-- Slick slider CSS -->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/daterangepicker.css">
+    <!-- BoxIcon  CSS -->
+    <link href="assets/css/boxicons.min.css" rel="stylesheet">
+    <!--  Style CSS  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Title -->
+    <title>trip-type | Kedarnath, Badrinath Tour – Rudransh Travels</title>
+    <meta name="description" content="Book affordable Char Dham Yatra packages including Kedarnath, Badrinath, Gangotri & Yamunotri. Get hotel, transport & helicopter services with Rudransh Tours & Travels.">
+    <meta name="keywords" content="Char Dham Yatra Package, Kedarnath Tour Package, Badrinath Yatra, Char Dham from Delhi, Kedarnath Helicopter Booking, Uttarakhand Tour Packages">
+<meta name="author" content="Rudransh Tours & Travels">
+
+
+    <link rel="icon" href="assets/img/fav-icons.jpg" type="image/gif" sizes="20x20">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+
+
+  <style>
+
+    :root {
+      --blue1: #1e90e8;
+      --blue2: #2bb5f5;
+      --blue3: #0d5fa8;
+     
+      --accent: #60c8f5;
+      --white: #ffffff;
+      --cream: #e0f4ff;
+    }
+
+    * {
+  font-family: "Poppins", sans-serif !important;
+}
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Lato', sans-serif;
+      background: #ffffff;
+      color: var(--white);
+      overflow-x: hidden;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      position: relative;
+      min-height: 380px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 80px 20px 60px;
+      overflow: hidden;
+    }
+
+    .hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("assets/img/banner1.jpg") center/cover no-repeat;
+  z-index: 0;
+}
+
+    /* floating circles decoration */
+    .hero::after {
+      content: '';
+      position: absolute;
+      width: 500px; height: 500px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.05);
+      top: -200px; right: -150px;
+      z-index: 0;
+    }
+
+    .hero-content { position: relative; z-index: 2; }
+
+    .brand-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.4);
+      border-radius: 40px;
+      padding: 8px 22px;
+      font-family: 'Cinzel', serif;
+      font-size: 0.78rem;
+      letter-spacing: 0.18em;
+      color: #fff;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      backdrop-filter: blur(8px);
+    }
+
+    .hero h1 {
+      font-family: 'Cinzel Decorative', cursive;
+      font-size: clamp(2rem, 6vw, 3.6rem);
+      font-weight: 900;
+      color: #ffffff;
+      text-shadow: 0 2px 20px rgba(0,0,0,0.2);
+      margin-bottom: 14px;
+      line-height: 1.15;
+    }
+
+    .hero-sub {
+      font-family: 'Cinzel', serif;
+      font-size: clamp(0.85rem, 2vw, 1.05rem);
+      color: rgba(255,255,255,0.85);
+      letter-spacing: 0.1em;
+      max-width: 560px;
+      margin: 0 auto 24px;
+    }
+
+    .hero-dhams {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
+    .dham-pill {
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 30px;
+      padding: 6px 18px;
+      font-family: 'Cinzel', serif;
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      color: #fff;
+      backdrop-filter: blur(6px);
+    }
+
+    /* ── STATS BAR ── */
+    .stats-bar {
+      background: linear-gradient(90deg, #0d5fa8, #1a7dd4, #0d5fa8);
+      padding: 22px 20px;
+      border-bottom: 1px solid rgba(96,200,245,0.2);
+    }
+
+    .stats-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .stat-item { text-align: center; flex: 1 1 120px; }
+
+    .stat-num {
+      font-family: 'Cinzel Decorative', cursive;
+      font-size: 1.6rem;
+      font-weight: 900;
+      color: #fff;
+      line-height: 1;
+    }
+
+    .stat-label {
+      font-size: 0.7rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.65);
+      margin-top: 4px;
+    }
+
+    /* ── SECTION WRAPPER ── */
+    .section {
+      background: var(--dark);
+      padding: 70px 20px;
+    }
+
+    .section-alt { background: #061e35; }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .section-header h2 {
+      font-family: 'Cinzel', serif;
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 10px;
+    }
+
+    .section-header p {
+      color: rgba(255,255,255,0.5);
+      font-size: 0.95rem;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .divider {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      justify-content: center;
+      margin: 14px 0 0;
+    }
+    .divider span {
+      height: 1px; width: 60px;
+      background: linear-gradient(to right, transparent, var(--accent));
+    }
+    .divider span:last-child {
+      background: linear-gradient(to left, transparent, var(--accent));
+    }
+    .divider i { color: var(--accent); font-size: 1rem; }
+
+    /* ── MAIN PACKAGE CARDS ── */
+    .packages-grid {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 28px;
+    }
+
+    .pkg-card {
+      background: linear-gradient(145deg, rgba(10,58,100,0.85), rgba(6,36,62,0.95));
+      border: 1px solid rgba(96,200,245,0.2);
+      border-radius: 20px;
+      overflow: hidden;
+      transition: transform 0.35s, box-shadow 0.35s, border-color 0.35s;
+      position: relative;
+    }
+
+    .pkg-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 60px rgba(30,144,232,0.25);
+      border-color: var(--accent);
+    }
+
+    .pkg-card.featured {
+      border-color: var(--blue2);
+      box-shadow: 0 0 0 2px rgba(43,181,245,0.3);
+    }
+
+    .featured-badge {
+      position: absolute;
+      top: 16px; right: 16px;
+      background: linear-gradient(135deg, #0d5fa8, #2bb5f5);
+      color: #fff;
+      font-family: 'Cinzel', serif;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      padding: 5px 14px;
+      border-radius: 20px;
+      z-index: 2;
+    }
+
+    .pkg-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s;
+    }
+
+    .pkg-card:hover .pkg-img { transform: scale(1.05); }
+
+    .pkg-img-wrap { overflow: hidden; position: relative; }
+
+    .pkg-overlay {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 80px;
+      background: linear-gradient(to top, rgba(6,36,62,0.95), transparent);
+    }
+
+    .pkg-body { padding: 24px; }
+
+    .pkg-icon {
+      width: 48px; height: 48px;
+      background: linear-gradient(135deg, var(--blue3), var(--blue1));
+      border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.2rem;
+      color: #fff;
+      margin-bottom: 14px;
+      box-shadow: 0 4px 15px rgba(30,144,232,0.35);
+    }
+
+    .pkg-title {
+      font-family: 'Cinzel', serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 6px;
+    }
+
+    .pkg-subtitle {
+      font-size: 0.78rem;
+      color: var(--accent);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .pkg-desc {
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.6);
+      line-height: 1.7;
+      margin-bottom: 18px;
+    }
+
+    .pkg-features {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+
+    .pkg-features li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.75);
+    }
+
+    .pkg-features li i {
+      color: var(--blue2);
+      font-size: 0.8rem;
+      flex-shrink: 0;
+    }
+
+    .pkg-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 18px;
+      border-top: 1px solid rgba(96,200,245,0.15);
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .pkg-price {
+      font-family: 'Cinzel', serif;
+    }
+    .pkg-price .from { font-size: 0.7rem; color: rgba(255,255,255,0.45); display: block; }
+    .pkg-price .amount { font-size: 1.3rem; font-weight: 700; color: #fff; }
+    .pkg-price .per { font-size: 0.7rem; color: rgba(255,255,255,0.45); }
+
+    .pkg-btn {
+      background: linear-gradient(135deg, var(--blue3), var(--blue1));
+      color: #fff;
+      border: none;
+      padding: 10px 22px;
+      border-radius: 10px;
+      font-family: 'Cinzel', serif;
+      font-size: 0.8rem;
+      font-weight: 700;
+      cursor: pointer;
+      letter-spacing: 0.08em;
+      transition: all 0.3s;
+      box-shadow: 0 4px 15px rgba(30,144,232,0.3);
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .pkg-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(30,144,232,0.5);
+      background: linear-gradient(135deg, var(--blue1), var(--blue2));
+    }
+
+    /* ── INCLUSIONS SECTION ── */
+    .inclusions-wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .inclusion-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .inc-item {
+      background: linear-gradient(135deg, rgba(10,58,100,0.8), rgba(6,36,62,0.9));
+      border: 1px solid rgba(96,200,245,0.15);
+      border-radius: 14px;
+      padding: 18px 16px;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      transition: border-color 0.3s, transform 0.3s;
+    }
+
+    .inc-item:hover {
+      border-color: var(--accent);
+      transform: translateY(-4px);
+    }
+
+    .inc-icon {
+      width: 38px; height: 38px;
+      background: linear-gradient(135deg, var(--blue3), var(--blue1));
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.95rem;
+      color: #fff;
+      flex-shrink: 0;
+    }
+
+    .inc-text .inc-title {
+      font-family: 'Cinzel', serif;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 3px;
+    }
+
+    .inc-text .inc-desc {
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.45);
+      line-height: 1.5;
+    }
+
+    .inclusions-img-wrap {
+      border-radius: 20px;
+      overflow: hidden;
+      position: relative;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+    }
+
+    .inclusions-img-wrap img {
+      width: 100%; height: 420px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .img-caption {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      padding: 24px;
+      background: linear-gradient(to top, rgba(6,36,62,0.95), transparent);
+    }
+
+    .img-caption .cap-title {
+      font-family: 'Cinzel', serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 4px;
+    }
+
+    .img-caption .cap-sub {
+      font-size: 0.78rem;
+      color: var(--accent);
+      letter-spacing: 0.08em;
+    }
+
+    /* ── DHAM HIGHLIGHT CARDS ── */
+    .dhams-grid {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .dham-card {
+      border-radius: 18px;
+      overflow: hidden;
+      position: relative;
+      height: 300px;
+      cursor: pointer;
+      transition: transform 0.35s;
+    }
+
+    .dham-card:hover { transform: translateY(-6px); }
+
+    .dham-card img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s;
+    }
+
+    .dham-card:hover img { transform: scale(1.08); }
+
+    .dham-card-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(6,36,62,0.92) 0%, rgba(6,36,62,0.2) 60%, transparent 100%);
+    }
+
+    .dham-card-body {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      padding: 20px;
+    }
+
+    .dham-num {
+      font-family: 'Cinzel Decorative', cursive;
+      font-size: 2rem;
+      font-weight: 900;
+      color: rgba(96,200,245,0.25);
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+
+    .dham-name {
+      font-family: 'Cinzel', serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 4px;
+    }
+
+    .dham-alt {
+      font-size: 0.75rem;
+      color: var(--accent);
+      letter-spacing: 0.08em;
+    }
+
+    /* ── PRICE TABLE ── */
+    .price-wrap {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .price-card {
+      background: linear-gradient(145deg, rgba(10,58,100,0.9), rgba(6,36,62,0.95));
+      border: 1px solid rgba(96,200,245,0.2);
+      border-radius: 20px;
+      overflow: hidden;
+    }
+
+    .price-header {
+      background: linear-gradient(135deg, var(--blue3), var(--blue1));
+      padding: 28px 36px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .price-header-left h3 {
+      font-family: 'Cinzel', serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .price-header-left p {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.7);
+      margin-top: 4px;
+    }
+
+    .price-big {
+      text-align: right;
+    }
+
+    .price-big .label { font-size: 0.75rem; color: rgba(255,255,255,0.65); }
+    .price-big .amount {
+      font-family: 'Cinzel Decorative', cursive;
+      font-size: 2.2rem;
+      font-weight: 900;
+      color: #fff;
+      line-height: 1;
+    }
+    .price-big .per { font-size: 0.75rem; color: rgba(255,255,255,0.65); }
+
+    .price-body {
+      padding: 32px 36px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .price-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 14px;
+      background: rgba(255,255,255,0.04);
+      border-radius: 10px;
+      border: 1px solid rgba(96,200,245,0.1);
+    }
+
+    .price-item i { color: var(--blue2); font-size: 0.9rem; }
+
+    .price-item span {
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.75);
+    }
+
+    .price-footer {
+      padding: 20px 36px 28px;
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .cta-btn {
+      flex: 1;
+      padding: 16px;
+      background: linear-gradient(135deg, var(--blue3), var(--blue1), var(--blue2));
+      color: #fff;
+      border: none;
+      border-radius: 12px;
+      font-family: 'Cinzel', serif;
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      cursor: pointer;
+      transition: all 0.3s;
+      box-shadow: 0 6px 25px rgba(30,144,232,0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-width: 160px;
+      text-decoration: none;
+    }
+
+    .cta-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 35px rgba(30,144,232,0.55);
+    }
+
+    .cta-btn.outline {
+      background: transparent;
+      border: 2px solid rgba(96,200,245,0.4);
+      color: var(--accent);
+      box-shadow: none;
+    }
+
+    .cta-btn.outline:hover {
+      border-color: var(--accent);
+      background: rgba(96,200,245,0.08);
+    }
+
+    /* ── SERVICES STRIP ── */
+    .services-strip {
+      background: linear-gradient(90deg, #0a3a64, #0d5fa8, #0a3a64);
+      padding: 36px 20px;
+      border-top: 1px solid rgba(96,200,245,0.15);
+      border-bottom: 1px solid rgba(96,200,245,0.15);
+    }
+
+    .services-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+
+    .srv-item {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex: 1 1 180px;
+    }
+
+    .srv-icon {
+      width: 50px; height: 50px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.3rem;
+      color: var(--accent);
+      flex-shrink: 0;
+      border: 1px solid rgba(96,200,245,0.2);
+    }
+
+    .srv-title {
+      font-family: 'Cinzel', serif;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 2px;
+    }
+
+    .srv-desc {
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.5);
+    }
+
+    /* ── SCROLL FADE ── */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.65s ease, transform 0.65s ease;
+    }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      .dhams-grid { grid-template-columns: 1fr 1fr; }
+      .inclusions-wrap { grid-template-columns: 1fr; }
+      .inclusions-img-wrap { order: -1; }
+      .inclusions-img-wrap img { height: 260px; }
+    }
+
+    @media (max-width: 600px) {
+      .dhams-grid { grid-template-columns: 1fr 1fr; }
+      .dham-card { height: 200px; }
+      .packages-grid { grid-template-columns: 1fr; }
+      .inclusion-list { grid-template-columns: 1fr; }
+      .price-body { grid-template-columns: 1fr; }
+      .price-header { flex-direction: column; text-align: center; }
+      .price-big { text-align: center; }
+      .hero h1 { font-size: 1.8rem; }
+    }
+  </style>
+</head>
+
+<body class="tt-magic-cursor">
+
+    <div id="magic-cursor">
+        <div id="ball"></div>
+    </div>
+
+    <!-- Back To Top -->
+    <div class="progress-wrap">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+        </svg>
+        <svg class="arrow" width="22" height="25" viewBox="0 0 24 23" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M0.556131 11.4439L11.8139 0.186067L13.9214 2.29352L13.9422 20.6852L9.70638 20.7061L9.76793 8.22168L3.6064 14.4941L0.556131 11.4439Z"/>
+            <path d="M23.1276 11.4999L16.0288 4.40105L15.9991 10.4203L20.1031 14.5243L23.1276 11.4999Z"/>
+        </svg>
+    </div>
+
+    <!-- header Section Start-->
+<div class="top-offer-text-slider-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="top-offer-text-slider-wrap">
+                        <div class="slider-btn top-offer-text-slider-prev">
+                            <svg width="11" height="12" viewBox="0 0 11 12" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.42865 10.4085C8.69396 8.57179 5.02049 6.73505 2.81641 6.00036C5.02049 5.26567 8.32661 4.16363 9.42865 1.5922" stroke-width="2" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <div class="swiper top-offer-text-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="travel-package-01.html">Easy Booking, Get Up to<strong>Best Deals</strong> on Char Dham Yatra Packages</a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">Customize Your Yatra & Get<strong>Best Deals</strong> Instantly</a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">Enjoy Family Holiday Packages with <strong>Flexible Payment Options</strong></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-btn top-offer-text-slider-next">
+                            <svg width="11" height="12" viewBox="0 0 11 12" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1.57141 10.4085C2.3061 8.57179 5.97957 6.73505 8.18366 6.00036C5.97957 5.26567 2.67345 4.16363 1.57141 1.5922" stroke-width="2" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="header-area style-2">
+
+        <div class="container-fluid d-flex flex-nowrap align-items-center justify-content-between">
+            <div class="logo-and-menu-area">
+                <a href="index.html" class="header-logo">
+                    <img src="assets/img/header-logo1.jpg" alt="">
+                </a>
+                <div class="main-menu">
+                    <div class="mobile-logo-area d-xl-none d-flex align-items-center justify-content-between">
+                        <a href="index.html" class="mobile-logo-wrap">
+                            <img src="assets/img/header-logo1.jpg" alt="">
+                        </a>
+                        <div class="menu-close-btn">
+                            <i class="bi bi-x"></i>
+                        </div>
+                    </div>
+                    <ul class="menu-list">
+                        <li class="menu-item-has-children active">
+                            <a href="index.html" class="drop-down">
+                                Home
+                            </a>
+                            
+                          
+                        </li>
+                        <li class="menu-item-has-children position-inherit">
+                            <a href="destination.html" class="drop-down">
+                                Destination
+                            </a>
+                          
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="activity.html" class="drop-down">
+                                Activities
+                                
+                            </a>
+                          
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="trip-type.html" class="drop-down">
+                               Trip Types
+                            </a>
+                          
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="hotels.html" class="drop-down">
+                               Our Hotels
+                                
+                            </a>
+                           
+                           
+                        </li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+              
+                       
+                </div>
+            </div>
+            <div class="nav-right">
+                <div class="contact-and-search-area">
+                    <div class="contact-area d-xl-flex d-none">
+                        <div class="icon">
+                            <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <path
+                                        d="M15.5646 11.7424L13.3317 9.50954C12.5343 8.7121 11.1786 9.03111 10.8596 10.0678C10.6204 10.7855 9.82296 11.1842 9.10526 11.0247C7.51037 10.626 5.35726 8.55261 4.95854 6.87797C4.71931 6.16024 5.19778 5.36279 5.91548 5.12359C6.95216 4.80461 7.27113 3.44895 6.47369 2.65151L4.24084 0.418659C3.60288 -0.139553 2.64595 -0.139553 2.08774 0.418659L0.572591 1.93381C-0.942555 3.5287 0.73208 7.75516 4.48007 11.5032C8.22807 15.2512 12.4545 17.0056 14.0494 15.4106L15.5646 13.8955C16.1228 13.2575 16.1228 12.3006 15.5646 11.7424Z"/>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="content">
+                            <span>Need Help?</span>
+                            <a href="tel:918755588223">+91 8755-588-223</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <a href="contact.html" class="primary-btn1 black-bg d-xl-flex d-none">
+                    <span>
+                
+                        BOOK NOW
+                    </span>
+                    <span>
+                        
+                        BOOK NOW
+                    </span>
+                </a>
+                <div class="sidebar-button mobile-menu-btn">
+                    <svg width="20" height="18" viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.29445 2.8421H10.5237C11.2389 2.8421 11.8182 2.2062 11.8182 1.42105C11.8182 0.635903 11.2389 0 10.5237 0H1.29445C0.579249 0 0 0.635903 0 1.42105C0 2.2062 0.579249 2.8421 1.29445 2.8421Z"></path>
+                        <path d="M1.23002 10.421H18.77C19.4496 10.421 20 9.78506 20 8.99991C20 8.21476 19.4496 7.57886 18.77 7.57886H1.23002C0.550421 7.57886 0 8.21476 0 8.99991C0 9.78506 0.550421 10.421 1.23002 10.421Z"></path>
+                        <path d="M18.8052 15.1579H10.2858C9.62563 15.1579 9.09094 15.7938 9.09094 16.5789C9.09094 17.3641 9.62563 18 10.2858 18H18.8052C19.4653 18 20 17.3641 20 16.5789C20 15.7938 19.4653 15.1579 18.8052 15.1579Z"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- header Section End-->
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="brand-badge">
+      <i class="fas fa-helicopter"></i>
+      Rudransh Tour & Travels
+    </div>
+    <h1>Trip Types</h1>
+    <p class="hero-sub">Devbhoomi Chardham Yatra — Choose Your Perfect Pilgrimage Package</p>
+    <div class="hero-dhams">
+      <span class="dham-pill"><i class="fas fa-om" style="margin-right:6px"></i>Yamunotri</span>
+      <span class="dham-pill"><i class="fas fa-om" style="margin-right:6px"></i>Gangotri</span>
+      <span class="dham-pill"><i class="fas fa-om" style="margin-right:6px"></i>Kedarnath</span>
+      <span class="dham-pill"><i class="fas fa-om" style="margin-right:6px"></i>Badrinath</span>
+    </div>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div class="stat-item fade-in">
+      <div class="stat-num">1.5L+</div>
+      <div class="stat-label">Happy Pilgrims</div>
+    </div>
+    <div class="stat-item fade-in" style="transition-delay:0.1s">
+      <div class="stat-num">4</div>
+      <div class="stat-label">Sacred Dhams</div>
+    </div>
+    <div class="stat-item fade-in" style="transition-delay:0.15s">
+      <div class="stat-num">5N–6D</div>
+      <div class="stat-label">Helicopter Yatra</div>
+    </div>
+    <div class="stat-item fade-in" style="transition-delay:0.2s">
+      <div class="stat-num">24/7</div>
+      <div class="stat-label">Travel Assistance</div>
+    </div>
+    <div class="stat-item fade-in" style="transition-delay:0.25s">
+      <div class="stat-num">VIP</div>
+      <div class="stat-label">Darshan Access</div>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES STRIP -->
+<div class="services-strip">
+  <div class="services-inner">
+    <div class="srv-item fade-in">
+      <div class="srv-icon"><i class="fas fa-helicopter"></i></div>
+      <div>
+        <div class="srv-title">Helicopter Shuttle</div>
+        <div class="srv-desc">Kedarnath by chopper</div>
+      </div>
+    </div>
+    <div class="srv-item fade-in" style="transition-delay:0.1s">
+      <div class="srv-icon"><i class="fas fa-horse"></i></div>
+      <div>
+        <div class="srv-title">Palki / Pony</div>
+        <div class="srv-desc">Yamunotri assistance</div>
+      </div>
+    </div>
+    <div class="srv-item fade-in" style="transition-delay:0.15s">
+      <div class="srv-icon"><i class="fas fa-hotel"></i></div>
+      <div>
+        <div class="srv-title">Luxury Hotels</div>
+        <div class="srv-desc">All meals included</div>
+      </div>
+    </div>
+    <div class="srv-item fade-in" style="transition-delay:0.2s">
+      <div class="srv-icon"><i class="fas fa-shield-alt"></i></div>
+      <div>
+        <div class="srv-title">Senior Care</div>
+        <div class="srv-desc">Special attention</div>
+      </div>
+    </div>
+    <div class="srv-item fade-in" style="transition-delay:0.25s">
+      <div class="srv-icon"><i class="fas fa-map-marked-alt"></i></div>
+      <div>
+        <div class="srv-title">Ex–Dehradun</div>
+        <div class="srv-desc">Round trip flight</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PACKAGES -->
+<section class="section">
+  <div class="section-header fade-in">
+    <h2><i class="fas fa-star" style="margin-right:10px;font-size:1.2rem"></i>Our Yatra Packages</h2>
+    <p>Hand-crafted pilgrimage experiences for every devotee</p>
+    <div class="divider">
+      <span></span><i class="fas fa-dharmachakra"></i><span></span>
+    </div>
+  </div>
+
+  <div class="packages-grid">
+
+    <!-- Card 1: Chardham Helicopter -->
+    <div class="pkg-card featured fade-in">
+      <div class="featured-badge">⭐ Most Popular</div>
+      <div class="pkg-img-wrap">
+        <img class="act-img" src="assets/img/4dham-helicopter.jpg" alt="Helicopter"/>
+        <div class="pkg-overlay"></div>
+      </div>
+      <div class="pkg-body">
+        <div class="pkg-icon"><i class="fas fa-helicopter"></i></div>
+        <div class="pkg-subtitle">5 Nights · 6 Days · Ex-Dehradun</div>
+        <div class="pkg-title">Chardham Yatra by Helicopter</div>
+        <p class="pkg-desc">The ultimate divine experience — visit all four sacred dhams via helicopter. Designed for comfort, speed, and spiritual fulfillment.</p>
+        <ul class="pkg-features">
+          <li><i class="fas fa-check-circle"></i> Helicopter shuttle for Kedarnath</li>
+          <li><i class="fas fa-check-circle"></i> Palki/Pony for Yamunotri</li>
+          <li><i class="fas fa-check-circle"></i> 1 Night luxury stay with meals</li>
+          <li><i class="fas fa-check-circle"></i> VIP Darshan at Do Dhams*</li>
+          <li><i class="fas fa-check-circle"></i> Round trip flying from Dehradun</li>
+          <li><i class="fas fa-check-circle"></i> All taxes included</li>
+        </ul>
+        <div class="pkg-footer">
+          <div class="pkg-price">
+            <span class="from">Starting from</span>
+            <span class="amount">₹2,30,000</span>
+            <span class="per"> / person</span>
+          </div>
+          <a href="contact.html" class="pkg-btn"><i class="fas fa-om"></i> Book Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2: Kedarnath -->
+    <div class="pkg-card fade-in" style="transition-delay:0.1s">
+      <div class="pkg-img-wrap">
+        <img class="pkg-img" src="assets/img/kedarnath-helicopter.jpg" alt="Kedarnath"/>
+        <div class="pkg-overlay"></div>
+      </div>
+      <div class="pkg-body">
+        <div class="pkg-icon"><i class="fas fa-mountain"></i></div>
+        <div class="pkg-subtitle">2 Nights · 3 Days · Ex-Dehradun</div>
+        <div class="pkg-title">Kedarnath Helicopter Yatra</div>
+        <p class="pkg-desc">Seek Lord Shiva's blessings at the divine Kedarnath Temple, nestled in the Himalayas at 3,583m. Fast, safe, and spiritually rewarding.</p>
+        <ul class="pkg-features">
+          <li><i class="fas fa-check-circle"></i> Helicopter from Phata/Sirsi</li>
+          <li><i class="fas fa-check-circle"></i> Hotel stay with all meals</li>
+          <li><i class="fas fa-check-circle"></i> VIP Darshan assistance</li>
+          <li><i class="fas fa-check-circle"></i> 24×7 on-ground support</li>
+        </ul><br><br>
+        <div class="pkg-footer">
+          <div class="pkg-price">
+            <span class="from">Starting from</span>
+            <span class="amount">₹85,000</span>
+            <span class="per"> / person</span>
+          </div>
+          <a href="contact" class="pkg-btn">Enquire</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3: Do Dham -->
+    <div class="pkg-card fade-in" style="transition-delay:0.2s">
+      <div class="pkg-img-wrap">
+        <img src="assets/img/2dham.jpg" alt="2 Dham Yatra">
+        <div class="pkg-overlay"></div>
+      </div>
+      <div class="pkg-body">
+        <div class="pkg-icon"><i class="fas fa-pray"></i></div>
+        <div class="pkg-subtitle">3 Nights · 4 Days · Ex-Dehradun</div>
+        <div class="pkg-title">Do Dham Yatra</div>
+        <p class="pkg-desc">Visit Kedarnath & Badrinath — two of the most revered shrines in India. Perfect for devotees with limited time but deep faith.</p>
+        <ul class="pkg-features">
+          <li><i class="fas fa-check-circle"></i> Kedarnath + Badrinath darshan</li>
+          <li><i class="fas fa-check-circle"></i> Comfortable hotel stay</li>
+          <li><i class="fas fa-check-circle"></i> All meals included</li>
+          <li><i class="fas fa-check-circle"></i> Senior citizen special care</li>
+        </ul><br><br>
+        <div class="pkg-footer">
+          <div class="pkg-price">
+            <span class="from">Starting from</span>
+            <span class="amount">₹1,10,000</span>
+            <span class="per"> / person</span>
+          </div>
+          <a href="contact.html" class="pkg-btn">Enquire</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4: Chardham by Road -->
+    <div class="pkg-card fade-in" style="transition-delay:0.05s">
+      <div class="pkg-img-wrap">
+        <img class="pkg-img" src="assets/img/chardham-road.jpg" alt="Chardham Road"/>
+        <div class="pkg-overlay"></div>
+      </div>
+      <div class="pkg-body">
+        <div class="pkg-icon"><i class="fas fa-bus-alt"></i></div>
+        <div class="pkg-subtitle">10 Nights · 11 Days · Ex-Haridwar</div>
+        <div class="pkg-title">Chardham Yatra by Road</div>
+        <p class="pkg-desc">A traditional, soul-stirring journey through the Himalayas visiting all four dhams by road. Immersive, scenic & budget-friendly.</p>
+        <ul class="pkg-features">
+          <li><i class="fas fa-check-circle"></i> AC deluxe vehicle</li>
+          <li><i class="fas fa-check-circle"></i> Hotel + Dharamshala options</li>
+          <li><i class="fas fa-check-circle"></i> All meals included</li>
+          <li><i class="fas fa-check-circle"></i> Experienced local guide</li>
+        </ul>
+        <div class="pkg-footer">
+          <div class="pkg-price">
+            <span class="from">Starting from</span>
+            <span class="amount">₹45,000</span>
+            <span class="per"> / person</span>
+          </div>
+          <a href="contact.html" class="pkg-btn">Enquire</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 5: Custom -->
+    <div class="pkg-card fade-in" style="transition-delay:0.15s">
+      <div class="pkg-img-wrap">
+        <img class="pkg-img" src="assets/img/custom.jpg" alt="Custom"/>
+        <div class="pkg-overlay"></div>
+      </div>
+      <div class="pkg-body">
+        <div class="pkg-icon"><i class="fas fa-sliders-h"></i></div>
+        <div class="pkg-subtitle">Flexible Duration · Custom Itinerary</div>
+        <div class="pkg-title">Customised Yatra Package</div>
+        <p class="pkg-desc">Design your own pilgrimage. Choose your dhams, travel dates, hotel category and travel mode. Fully personalised for your family.</p>
+        <ul class="pkg-features">
+          <li><i class="fas fa-check-circle"></i> Choose your own dhams</li>
+          <li><i class="fas fa-check-circle"></i> Flexible travel dates</li>
+          <li><i class="fas fa-check-circle"></i> Private vehicle option</li>
+          <li><i class="fas fa-check-circle"></i> Group & family discounts</li>
+        </ul>
+        <div class="pkg-footer">
+          <div class="pkg-price">
+            <span class="from">Pricing</span>
+            <span class="amount">On Request</span>
+          </div>
+          <a href="contact.html" class="pkg-btn">Customise</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 6: Senior Special -->
+    <div class="pkg-card fade-in" style="transition-delay:0.25s">
+      <div class="pkg-img-wrap">
+        <img class="pkg-img" src="assets/img/senior.jpg" alt="Senior"/>
+        <div class="pkg-overlay"></div>
+      </div>
+      <div class="pkg-body">
+        <div class="pkg-icon"><i class="fas fa-heart"></i></div>
+        <div class="pkg-subtitle">5 Nights · 6 Days · Senior Friendly</div>
+        <div class="pkg-title">Senior Citizen Special Yatra</div>
+        <p class="pkg-desc">Crafted with extra care and comfort for elderly pilgrims. Includes medical support, wheelchair assistance, and slower-paced itinerary.</p>
+        <ul class="pkg-features">
+          <li><i class="fas fa-check-circle"></i> Medical assistance on-ground</li>
+          <li><i class="fas fa-check-circle"></i> Wheelchair & palki support</li>
+          <li><i class="fas fa-check-circle"></i> Priority VIP darshan</li>
+          <li><i class="fas fa-check-circle"></i> Dedicated personal attendant</li>
+        </ul>
+        <div class="pkg-footer">
+          <div class="pkg-price">
+            <span class="from">Starting from</span>
+            <span class="amount">₹2,50,000</span>
+            <span class="per"> / person</span>
+          </div>
+          <a href="contact.html" class="pkg-btn">Book Now</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- 4 DHAMS HIGHLIGHT -->
+<!-- <section class="section section-alt">
+  <div class="section-header fade-in">
+    <h2><i class="fas fa-map-pin" style="margin-right:10px;font-size:1.2rem"></i>The Four Sacred Dhams</h2>
+    <p>Yamunotri · Gangotri · Kedarnath · Badrinath</p>
+    <div class="divider">
+      <span></span><i class="fas fa-om"></i><span></span>
+    </div>
+  </div>
+
+  <div class="dhams-grid">
+    <div class="dham-card fade-in">
+      <img src="https://images.unsplash.com/photo-1588416499018-1b8ff23dffc5?w=400&q=80" alt="Yamunotri"/>
+      <div class="dham-card-overlay"></div>
+      <div class="dham-card-body">
+        <div class="dham-num">01</div>
+        <div class="dham-name">Yamunotri</div>
+        <div class="dham-alt">Source of River Yamuna · 3,293m</div>
+      </div>
+    </div>
+    <div class="dham-card fade-in" style="transition-delay:0.1s">
+      <img src="https://images.unsplash.com/photo-1605640840605-14ac1855827b?w=400&q=80" alt="Gangotri"/>
+      <div class="dham-card-overlay"></div>
+      <div class="dham-card-body">
+        <div class="dham-num">02</div>
+        <div class="dham-name">Gangotri</div>
+        <div class="dham-alt">Origin of River Ganga · 3,048m</div>
+      </div>
+    </div>
+    <div class="dham-card fade-in" style="transition-delay:0.2s">
+      <img src="https://images.unsplash.com/photo-1609766857924-e94b0f03a9a9?w=400&q=80" alt="Kedarnath"/>
+      <div class="dham-card-overlay"></div>
+      <div class="dham-card-body">
+        <div class="dham-num">03</div>
+        <div class="dham-name">Kedarnath</div>
+        <div class="dham-alt">Abode of Lord Shiva · 3,583m</div>
+      </div>
+    </div>
+    <div class="dham-card fade-in" style="transition-delay:0.3s">
+      <img src="https://images.unsplash.com/photo-1567157577867-05ccb1388e66?w=400&q=80" alt="Badrinath"/>
+      <div class="dham-card-overlay"></div>
+      <div class="dham-card-body">
+        <div class="dham-num">04</div>
+        <div class="dham-name">Badrinath</div>
+        <div class="dham-alt">Abode of Lord Vishnu · 3,133m</div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<!-- INCLUSIONS -->
+<section class="section">
+  <div class="section-header fade-in">
+    <h2><i class="fas fa-gift" style="margin-right:10px;font-size:1.2rem"></i>Package Inclusions</h2>
+    <p>Everything covered for your sacred journey</p>
+    <div class="divider">
+      <span></span><i class="fas fa-star"></i><span></span>
+    </div>
+  </div>
+
+  <div class="inclusions-wrap">
+    <div class="inclusion-list">
+      <div class="inc-item fade-in">
+        <div class="inc-icon"><i class="fas fa-car"></i></div>
+        <div class="inc-text">
+          <div class="inc-title">Pickup & Drop</div>
+          <div class="inc-desc">From Dehradun, door-to-door</div>
+        </div>
+      </div>
+      <div class="inc-item fade-in" style="transition-delay:0.05s">
+        <div class="inc-icon"><i class="fas fa-helicopter"></i></div>
+        <div class="inc-text">
+          <div class="inc-title">Helicopter Shuttle</div>
+          <div class="inc-desc">Kedarnath by chopper</div>
+        </div>
+      </div>
+      <div class="inc-item fade-in" style="transition-delay:0.1s">
+        <div class="inc-icon"><i class="fas fa-bed"></i></div>
+        <div class="inc-text">
+          <div class="inc-title">Luxury Stay</div>
+          <div class="inc-desc">1 Night with all meals</div>
+        </div>
+      </div>
+      <div class="inc-item fade-in" style="transition-delay:0.15s">
+        <div class="inc-icon"><i class="fas fa-horse"></i></div>
+        <div class="inc-text">
+          <div class="inc-title">Palki / Pony</div>
+          <div class="inc-desc">For Yamunotri trek</div>
+        </div>
+      </div>
+      <div class="inc-item fade-in" style="transition-delay:0.2s">
+        <div class="inc-icon"><i class="fas fa-hotel"></i></div>
+        <div class="inc-text">
+          <div class="inc-title">Hotels with Meals</div>
+          <div class="inc-desc">All dhams covered</div>
+        </div>
+      </div>
+      <div class="inc-item fade-in" style="transition-delay:0.25s">
+        <div class="inc-icon"><i class="fas fa-star"></i></div>
+        <div class="inc-text">
+          <div class="inc-title">VIP Darshan</div>
+          <div class="inc-desc">Do Dhams* priority</div>
+        </div>
+      </div>
+      <div class="inc-item fade-in" style="transition-delay:0.3s">
+        <div class="inc-icon"><i class="fas fa-headset"></i></div>
+        <div class="inc-text">
+          <div class="inc-title">24×7 Support</div>
+          <div class="inc-desc">Expert travel assistance</div>
+        </div>
+      </div>
+      <div class="inc-item fade-in" style="transition-delay:0.35s">
+        <div class="inc-icon"><i class="fas fa-receipt"></i></div>
+        <div class="inc-text">
+          <div class="inc-title">All Taxes</div>
+          <div class="inc-desc">No hidden charges</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="inclusions-img-wrap fade-in">
+      <img src="assets/img/kedarnath-temple.jpg" alt="Kedarnath Temple"/>
+      <div class="img-caption">
+        <div class="cap-title">Kedarnath Temple, Uttarakhand</div>
+        <div class="cap-sub">3,583m above sea level · Lord Shiva's Abode</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICE CARD -->
+<section class="section section-alt" style="padding-bottom:80px">
+  <div class="section-header fade-in">
+    <h2><i class="fas fa-tag" style="margin-right:10px;font-size:1.2rem"></i>Package Pricing</h2>
+    <p>Transparent pricing — no hidden charges</p>
+    <div class="divider">
+      <span></span><i class="fas fa-rupee-sign"></i><span></span>
+    </div>
+  </div>
+
+  <div class="price-wrap">
+    <div class="price-card fade-in">
+      <div class="price-header">
+        <div class="price-header-left">
+          <h3>Devbhoomi Chardham Yatra by Helicopter</h3>
+          <p>5 Nights · 6 Days · Ex-Dehradun · Round Trip</p>
+        </div>
+        <div class="price-big">
+          <div class="label">Starting from</div>
+          <div class="amount">₹2,30,000</div>
+          <div class="per">per person · all inclusive</div>
+        </div>
+      </div>
+      <div class="price-body">
+        <div class="price-item"><i class="fas fa-check-circle"></i><span>Pickup & Drop from Dehradun</span></div>
+        <div class="price-item"><i class="fas fa-check-circle"></i><span>Local Sightseeing & Ground Support</span></div>
+        <div class="price-item"><i class="fas fa-check-circle"></i><span>1 Night Luxury Stay with Meals</span></div>
+        <div class="price-item"><i class="fas fa-check-circle"></i><span>Senior Citizen Special Care</span></div>
+        <div class="price-item"><i class="fas fa-check-circle"></i><span>Helicopter Shuttle (Kedarnath)</span></div>
+        <div class="price-item"><i class="fas fa-check-circle"></i><span>Round Trip Flying from Dehradun</span></div>
+        <div class="price-item"><i class="fas fa-check-circle"></i><span>Palki / Pony (Yamunotri)</span></div>
+        <div class="price-item"><i class="fas fa-check-circle"></i><span>All Taxes Included</span></div>
+        <div class="price-item"><i class="fas fa-check-circle"></i><span>Comfortable Hotels with All Meals</span></div>
+        <div class="price-item"><i class="fas fa-check-circle"></i><span>24×7 Expert Travel Assistance</span></div>
+        <div class="price-item"><i class="fas fa-check-circle"></i><span>VIP Darshan at Do Dhams*</span></div>
+        <div class="price-item"><i class="fas fa-info-circle"></i><span>*Subject to time & permissions</span></div>
+      </div>
+      <div class="price-footer">
+        <a href="tel:8755588223" class="cta-btn">
+          <i class="fas fa-phone-alt"></i> Call to Book
+        </a>
+        <a href="https://wa.me/918755588223" class="cta-btn">
+          <i class="fab fa-whatsapp"></i> WhatsApp Us
+        </a>
+        <a href="contact.html" class="cta-btn outline">
+          <i class="fas fa-paper-plane"></i> Send Enquiry
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+   
+ <!-- home2 Footer Section Start-->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-contact-wrap">
+              
+            <ul class="contact-area">
+                     <li class="single-contact">
+                        <div class="icon">
+                            <img src="assets/img/home1/icon/call-icon.svg" alt="">
+                        </div>
+                        <div class="content">
+                            <span>Call Us</span>
+                            <a href="tel:++918755588223">+91 8755588223</a>
+                        </div>
+                    </li>
+                      <li class="single-contact">
+                        <div class="icon">
+                            <img src="assets/img/home1/icon/call-icon.svg" alt="">
+                        </div>
+                        <div class="content">
+                            <span>Call Us</span>
+                            <a href="tel:++918006100222">+91 8006100222</a>
+                        </div>
+                    </li>
+                    <li class="single-contact">
+                        <div class="icon">
+                            <img src="assets/img/home1/icon/call-icon.svg" alt="">
+                        </div>
+                        <div class="content">
+                            <span>Call Us</span>
+                            <a href="tel:++91 79008 12727">+91 79008 12727</a>
+                        </div>
+                    </li>
+                      <li class="single-contact">
+                        <div class="icon">
+                            <img src="assets/img/home1/icon/mail-icon2.svg" alt="">
+                        </div>
+                        <div class="content">
+                            <span>Mail Us</span>
+                            <a href="mailto:info@rudransh.com">info@rudransh.com</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <svg class="divider" width="1320" height="6" viewBox="0 0 1320 6" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M5 2.5L0 0.113249V5.88675L5 3.5V2.5ZM1315 3.5L1320 5.88675V0.113249L1315 2.5V3.5ZM4.5 3.5H1315.5V2.5H4.5V3.5Z"/>
+            </svg>
+            <div class="footer-menu-wrap">
+                <div class="row gy-md-4 gy-5">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="footer-logo-and-addition-info">
+                           
+                              <div class="widget-title">
+                                <h5 style="color: #fff;">Rudransh Tour & Travels</h5>
+                            </div>
+                            <div class="address-area">
+                                
+                                <p>At Rudransh Tour & Travels, we are committed to providing a seamless and spiritually enriching travel experience across the sacred Char Dham destinations — Kedarnath, Badrinath, Gangotri, and Yamunotri.
+
+                                </p>
+                            </div>
+                            <ul class="social-list">
+                                <li><a href="https://www.facebook.com/share/r/1AptnqpSjg/"><i class="bx bxl-facebook"></i></a></li>
+                                <!-- <li><a href="#"><i class="bx bxl-linkedin"></i></a></li> -->
+                                <!-- <li><a href="#"><i class="bx bxl-youtube"></i></a></li> -->
+                                <li><a href="https://www.instagram.com/rudransh_travels_?utm_source=qr&igsh=Z3g0a255MnZ0ZG5h"><i class="bx bxl-instagram-alt"></i></a></li>
+                            </ul>
+                           
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-md-end">
+                        <div class="footer-widget">
+                            <div class="widget-title">
+                                <h5>Top Destination</h5>
+                            </div>
+                            <ul class="widget-list">
+                                <li><a href="#">Uttarakhand</a></li>
+                                <li><a href="#">Haridwar</a></li>
+                                <li><a href="#">Dehradun</a></li>
+                                <li><a href="#">Rishikesh</a></li>
+                                <li><a href="#">Mussoorie</a></li>
+                                <li><a href="#">Dhanaulti</a></li>
+                                <li><a href="#">Nainital</a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-md-end">
+                        <div class="footer-widget">
+                            <div class="widget-title">
+                                <h5>Adventure Activities
+                                </h5>
+                            </div>
+                            <ul class="widget-list">
+                                <li><a href="#">City Tours
+                               </a></li>
+                                <li><a href="#">Hiking & Stiking</a></li>
+                                <li><a href="#">River Rafting</a></li>
+                                <li><a href="#">Jungle Safari</a></li>
+                                <li><a href="#">Trekking</a></li>
+                                <li><a href="#">Cycling</a></li>
+                               
+                                <li><a href="#">Boating</a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 d-flex justify-content-lg-end">
+                        <div class="footer-widget">
+                            <div class="widget-title">
+                                <h5>Resources</h5>
+                            </div>
+                            <ul class="widget-list">
+                                <li><a href="index.html">Home</a></li>
+                                
+                                <li><a href="destination.html">Destination</a></li>
+                                <li><a href="activity.html">Activities</a></li>
+                                <li><a href="trip-type.html">Trip Types</a></li>
+                                <li><a href="hotels.html">Our Hotels</a></li>
+
+                                <li><a href="gallery.html">Gallery</a></li>
+
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="copyright-and-payment-method-area">
+                    <p style="text-align: center;">2026 Rudransh Tour & Travels. All Rights Reserved.| Designed by <a href="https://pixelitservices.com/" target="_blank">Pixel IT Services</a></p>
+                  
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- home2 Footer Section End-->
+
+
+    <!--  Main jQuery  -->
+    <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/jquery-ui.js"></script>
+    <script src="assets/js/moment.min.js"></script>
+    <script src="assets/js/daterangepicker.min.js"></script>
+    
+    <!-- Popper and Bootstrap JS -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <!-- Swiper slider JS -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <!-- Waypoints JS -->
+    <script src="assets/js/waypoints.min.js"></script>
+    <!-- Counterup JS -->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!-- Wow JS -->
+    <script src="assets/js/wow.min.js"></script>
+    <!-- Gsap  JS -->
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/jquery.fancybox.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/select-dropdown.js"></script>
+    <script src="assets/js/custom.js"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"70834e4b23964a2eaf7cf4ec0e5e9a84","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+
+<script>
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+
+</body>
+
+
+
+</html>

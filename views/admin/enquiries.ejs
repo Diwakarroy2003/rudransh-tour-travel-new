@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>Customer Enquiries</title>
+
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+padding:30px;
+background:
+linear-gradient(rgba(6,36,62,.94),rgba(6,36,62,.94)),
+url("/assets/img/banner1.jpg") center/cover no-repeat;
+min-height:100vh;
+}
+
+.topbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(255,255,255,.12);
+padding:18px 24px;
+border-radius:18px;
+backdrop-filter:blur(12px);
+margin-bottom:25px;
+}
+
+.topbar h1{
+color:#fff;
+}
+
+.back-btn{
+text-decoration:none;
+background:#fff;
+color:#0d6efd;
+padding:10px 16px;
+border-radius:8px;
+font-weight:bold;
+}
+
+.table-wrap{
+background:rgba(255,255,255,.12);
+border-radius:18px;
+padding:20px;
+backdrop-filter:blur(12px);
+overflow:auto;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+min-width:1000px;
+}
+
+th{
+background:#0d6efd;
+color:#fff;
+padding:14px;
+text-align:left;
+}
+
+td{
+padding:14px;
+color:#fff;
+border-bottom:1px solid rgba(255,255,255,.12);
+vertical-align:top;
+}
+
+.delete-btn{
+background:#dc3545;
+color:#fff;
+border:none;
+padding:8px 14px;
+border-radius:8px;
+cursor:pointer;
+font-weight:bold;
+}
+
+.delete-btn:hover{
+opacity:.9;
+}
+</style>
+</head>
+
+<body>
+
+<div class="topbar">
+
+<h1>Customer Enquiries</h1>
+
+<a href="/admin/dashboard" class="back-btn">
+<i class="fa-solid fa-arrow-left"></i>
+Dashboard
+</a>
+
+</div>
+
+<div class="table-wrap">
+
+<table>
+
+<tr>
+<th>Name</th>
+<th>Phone</th>
+<th>Email</th>
+<th>Package</th>
+<th>Month</th>
+<th>Pilgrims</th>
+<th>City</th>
+<th>Message</th>
+<th>Action</th>
+</tr>
+
+<% enquiries.forEach(item => { %>
+
+<tr>
+
+<td><%= item.name %></td>
+
+<td><%= item.phone %></td>
+
+<td><%= item.email %></td>
+
+<td><%= item.packageType %></td>
+
+<td><%= item.travelMonth %></td>
+
+<td><%= item.pilgrims %></td>
+
+<td><%= item.departureCity %></td>
+
+<td><%= item.message %></td>
+
+<td>
+
+<form
+action="/admin/enquiry/delete/<%= item._id %>"
+method="POST"
+>
+
+<button class="delete-btn">
+Delete
+</button>
+
+</form>
+
+</td>
+
+</tr>
+
+<% }) %>
+
+</table>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rudransh Admin Login</title>
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background:
+        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+        url("/assets/img/banner1.jpg") center/cover no-repeat;
+      padding: 20px;
+    }
+
+    .login-box {
+      width: 100%;
+      max-width: 420px;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(12px);
+      border-radius: 18px;
+      padding: 35px;
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+    }
+
+    .logo {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .logo img {
+      width: 70px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    .logo h2 {
+      font-size: 26px;
+      color: #0d6efd;
+      margin-bottom: 5px;
+    }
+
+    .logo p {
+      font-size: 14px;
+      color: #666;
+    }
+
+    .input-group {
+      position: relative;
+      margin-bottom: 18px;
+    }
+
+    .input-group i {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #777;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 12px 12px 12px 42px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 15px;
+      outline: none;
+    }
+
+    .input-group input:focus {
+      border-color: #0d6efd;
+    }
+
+    .remember {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 18px;
+      font-size: 14px;
+      color: #444;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background: linear-gradient(135deg, #0d6efd, #2ea7ff);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: .3s;
+    }
+
+    button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 18px rgba(13, 110, 253, .25);
+    }
+
+    .footer-text {
+      text-align: center;
+      margin-top: 16px;
+      font-size: 13px;
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="login-box">
+
+    <div class="logo">
+      <img src="/assets/img/header-logo1.jpg" alt="Logo" />
+
+      <h2>Rudransh Admin</h2>
+
+      <p>Secure dashboard access</p>
+    </div>
+
+    <form action="/admin/login" method="POST">
+
+      <div class="input-group">
+        <i class="fa-solid fa-envelope"></i>
+
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter email"
+          required
+        />
+      </div>
+
+      <div class="input-group">
+        <i class="fa-solid fa-lock"></i>
+
+        <input
+          type="password"
+          name="password"
+          placeholder="Enter password"
+          required
+        />
+      </div>
+
+    
+
+      <div class="remember">
+        <input type="checkbox" name="remember" />
+        <label>Remember me</label>
+      </div>
+
+      <div
+  style="
+    text-align:right;
+    margin-bottom:16px;
+  "
+>
+  <a
+    href="/admin/forgot-password"
+    style="
+      color:#0d6efd;
+      text-decoration:none;
+      font-weight:600;
+    "
+  >
+    Forgot Password?
+  </a>
+</div>
+
+      <button type="submit">
+        <i class="fa-solid fa-right-to-bracket"></i>
+        Login Securely
+      </button>
+
+    </form>
+
+    <div class="footer-text">
+      Rudransh Tours & Travels Admin Panel
+    </div>
+
+  </div>
+
+</body>
+</html>

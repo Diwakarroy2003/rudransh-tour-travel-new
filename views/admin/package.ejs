@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>Manage Packages</title>
+
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+padding:30px;
+background:
+linear-gradient(rgba(6,36,62,.94),rgba(6,36,62,.94)),
+url("/assets/img/banner1.jpg") center/cover no-repeat;
+min-height:100vh;
+}
+
+.topbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:25px;
+background:rgba(255,255,255,.12);
+padding:18px 24px;
+border-radius:18px;
+backdrop-filter:blur(12px);
+}
+
+.topbar h1{
+color:#fff;
+}
+
+.back-btn{
+background:#fff;
+color:#0d6efd;
+padding:10px 16px;
+border-radius:8px;
+font-weight:bold;
+text-decoration:none;
+}
+
+.card{
+background:rgba(255,255,255,.12);
+padding:24px;
+border-radius:18px;
+backdrop-filter:blur(12px);
+margin-bottom:25px;
+}
+
+input{
+width:100%;
+padding:12px;
+border:none;
+border-radius:10px;
+margin-bottom:12px;
+}
+
+button{
+padding:10px 16px;
+border:none;
+border-radius:8px;
+background:#0d6efd;
+color:#fff;
+cursor:pointer;
+font-weight:bold;
+}
+
+.package-item{
+background:rgba(255,255,255,.12);
+padding:18px;
+border-radius:16px;
+margin-bottom:15px;
+color:#fff;
+}
+
+.edit-link{
+margin-left:10px;
+text-decoration:none;
+color:#fff;
+font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<div class="topbar">
+
+<h1>Manage Packages</h1>
+
+<a href="/admin/dashboard" class="back-btn">
+<i class="fa-solid fa-arrow-left"></i>
+Dashboard
+</a>
+
+</div>
+
+<div class="card">
+
+<form action="/admin/package/add" method="POST"><form
+  action="/admin/package/add"
+  method="POST"
+  enctype="multipart/form-data"
+>
+
+<input
+type="text"
+name="title"
+placeholder="Package title"
+required
+/>
+
+<input
+type="text"
+name="price"
+placeholder="Package price"
+required
+/>
+
+<input
+type="text"
+name="duration"
+placeholder="Duration"
+required
+/>
+
+<input
+type="text"
+name="image"
+placeholder="Image file name"
+required
+/><input
+type="file"
+name="image"
+accept="image/*"
+required
+/>
+
+<button type="submit">
+<i class="fa-solid fa-plus"></i>
+Add Package
+</button>
+
+</form>
+
+</div>
+
+<% packages.forEach(item => { %>
+
+<div class="package-item">
+
+<strong><%= item.title %></strong>
+
+— ₹<%= item.price %>
+
+— <%= item.duration %>
+
+<a
+href="/admin/package/edit/<%= item._id %>"
+class="edit-link"
+>
+Edit
+</a>
+
+<form
+action="/admin/package/delete/<%= item._id %>"
+method="POST"
+style="display:inline;"
+>
+
+<button type="submit">
+Delete
+</button>
+
+</form>
+
+</div>
+
+<% }) %>
+
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Hero Banner</title>
+
+<style>
+body{
+font-family:Arial;
+background:#f5f5f5;
+padding:20px;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+}
+
+.card{
+background:#fff;
+padding:20px;
+border-radius:14px;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+margin-bottom:25px;
+}
+
+input{
+width:100%;
+padding:12px;
+margin-bottom:12px;
+border:1px solid #ddd;
+border-radius:8px;
+}
+
+button{
+padding:10px 18px;
+border:none;
+border-radius:8px;
+cursor:pointer;
+margin-right:10px;
+}
+
+.add{
+background:#0d6efd;
+color:#fff;
+}
+
+.active{
+background:#198754;
+color:#fff;
+}
+
+.delete{
+background:#dc3545;
+color:#fff;
+}
+
+img{
+width:100%;
+max-width:280px;
+border-radius:12px;
+margin-top:10px;
+}
+
+@media(max-width:768px){
+img{
+max-width:100%;
+}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="card">
+
+<h2>Manage Hero Banner</h2>
+
+<form
+action="/admin/banner/add"
+method="POST"
+enctype="multipart/form-data"
+>
+
+<input
+type="text"
+name="title"
+placeholder="Banner title"
+required
+>
+
+<input
+type="text"
+name="subtitle"
+placeholder="Subtitle"
+required
+>
+
+<input
+type="text"
+name="buttonText"
+placeholder="Button text"
+required
+>
+
+<input
+type="text"
+name="buttonLink"
+placeholder="Button link"
+required
+>
+
+<input
+type="file"
+name="image"
+required
+>
+
+<button class="add">
+Add Banner
+</button>
+
+</form>
+
+</div>
+
+<% banners.forEach(banner=> { %>
+
+<div class="card">
+
+<h3><%= banner.title %></h3>
+
+<p><%= banner.subtitle %></p>
+
+<img
+src="/uploads/<%= banner.image %>"
+>
+
+<form
+action="/admin/banner/activate/<%= banner._id %>"
+method="POST"
+style="display:inline"
+>
+<button class="active">
+Set Active
+</button>
+</form>
+
+<form
+action="/admin/banner/delete/<%= banner._id %>"
+method="POST"
+style="display:inline"
+>
+<button class="delete">
+Delete
+</button>
+</form>
+
+</div>
+
+<% }) %>
+
+</div>
+
+</body>
+</html>

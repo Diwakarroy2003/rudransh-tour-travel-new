@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>Manage Gallery</title>
+
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+padding:30px;
+min-height:100vh;
+background:
+linear-gradient(rgba(6,36,62,.94),rgba(6,36,62,.94)),
+url("/assets/img/banner1.jpg") center/cover no-repeat;
+}
+
+.topbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(255,255,255,.12);
+padding:18px 24px;
+border-radius:18px;
+backdrop-filter:blur(12px);
+margin-bottom:25px;
+}
+
+.topbar h1{
+color:#fff;
+}
+
+.back-btn{
+background:#fff;
+color:#0d6efd;
+padding:10px 16px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.card{
+background:rgba(255,255,255,.12);
+padding:24px;
+border-radius:18px;
+backdrop-filter:blur(12px);
+margin-bottom:25px;
+}
+
+input{
+width:100%;
+padding:12px;
+border:none;
+border-radius:10px;
+margin-bottom:12px;
+}
+
+button{
+padding:10px 16px;
+border:none;
+border-radius:8px;
+background:#0d6efd;
+color:#fff;
+cursor:pointer;
+font-weight:bold;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:20px;
+}
+
+.gallery-item{
+background:rgba(255,255,255,.12);
+border-radius:18px;
+overflow:hidden;
+backdrop-filter:blur(12px);
+}
+
+.gallery-item img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.content{
+padding:16px;
+color:#fff;
+}
+
+.actions{
+margin-top:12px;
+display:flex;
+gap:10px;
+}
+
+.edit-btn{
+background:#0d6efd;
+padding:8px 12px;
+border-radius:8px;
+color:#fff;
+text-decoration:none;
+font-weight:bold;
+}
+
+.delete-btn{
+background:#dc3545;
+}
+</style>
+</head>
+
+<body>
+
+<div class="topbar">
+
+<h1>Manage Gallery</h1>
+
+<a
+href="/admin/dashboard"
+class="back-btn"
+>
+<i class="fa-solid fa-arrow-left"></i>
+Dashboard
+</a>
+
+</div>
+
+<div class="card">
+
+<form
+action="/admin/gallery/add"
+method="POST"
+enctype="multipart/form-data"
+>
+
+<input
+type="text"
+name="title"
+placeholder="Image title"
+required
+>
+
+<input
+type="file"
+name="image"
+required
+>
+
+<button type="submit">
+<i class="fa-solid fa-upload"></i>
+Upload Image
+</button>
+
+</form>
+
+</div>
+
+<div class="grid">
+
+<% gallery.forEach(item => { %>
+
+<div class="gallery-item">
+
+<img
+src="/uploads/<%= item.image %>"
+alt="<%= item.title %>"
+>
+
+<div class="content">
+
+<h3><%= item.title %></h3>
+
+<div class="actions">
+
+<a
+href="/admin/gallery/edit/<%= item._id %>"
+class="edit-btn"
+>
+Edit
+</a>
+
+<form
+action="/admin/gallery/delete/<%= item._id %>"
+method="POST"
+>
+
+<button
+type="submit"
+class="delete-btn"
+>
+Delete
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+<% }) %>
+
+</div>
+
+</body>
+</html>

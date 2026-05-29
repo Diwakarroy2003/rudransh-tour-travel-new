@@ -1,0 +1,1573 @@
+<!doctype html>
+<html lang="en">
+
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/jquery-ui.css" rel="stylesheet">
+    <!-- Bootstrap Icon CSS -->
+    <link href="assets/css/bootstrap-icons.css" rel="stylesheet">
+    <!-- CSS -->
+    <link href="assets/css/animate.min.css" rel="stylesheet">
+    <!-- FancyBox CSS -->
+    <link href="assets/css/jquery.fancybox.min.css" rel="stylesheet">
+    <!-- Swiper slider CSS -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!-- Slick slider CSS -->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/daterangepicker.css">
+    <!-- BoxIcon  CSS -->
+    <link href="assets/css/boxicons.min.css" rel="stylesheet">
+    <!--  Style CSS  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Title -->
+    <title>trip-type | Kedarnath, Badrinath Tour – Rudransh Travels</title>
+    <meta name="description" content="Book affordable Char Dham Yatra packages including Kedarnath, Badrinath, Gangotri & Yamunotri. Get hotel, transport & helicopter services with Rudransh Tours & Travels.">
+    <meta name="keywords" content="Char Dham Yatra Package, Kedarnath Tour Package, Badrinath Yatra, Char Dham from Delhi, Kedarnath Helicopter Booking, Uttarakhand Tour Packages">
+<meta name="author" content="Rudransh Tours & Travels">
+
+
+    <link rel="icon" href="assets/img/fav-icons.jpg" type="image/gif" sizes="20x20">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+
+
+  <style>
+
+
+    :root {
+      --blue-deep:   #0b1f4b;
+      --blue-mid:    #1a3a7c;
+      --blue-bright: #2256c7;
+      --blue-light:  #3b82f6;
+     
+      --white:       #ffffff;
+      --off-white:   #f8f7f4;
+      --grey-light:  #e8e4dc;
+      --grey-text:   #6b6560;
+      --text-dark:   #1a1510;
+      --shadow-blue: 0 20px 60px rgba(11,31,75,0.18);
+      --shadow-gold: 0 8px 30px rgba(201,168,76,0.25);
+    }
+
+
+    * {
+  font-family: "Poppins", sans-serif !important;
+}
+ 
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+ 
+    html { scroll-behavior: smooth; }
+ 
+    body {
+      font-family: 'Crimson Pro', Georgia, serif;
+      background: var(--off-white);
+      color: var(--text-dark);
+      overflow-x: hidden;
+    }
+ 
+    /* ─── HERO ─── */
+    .hero {
+      position: relative;
+      height: 72vh; min-height: 520px;
+      background: linear-gradient(160deg, #1ab0f0 0%, #0da8ee 40%, #0b9fea 75%, #18abf0 100%);
+      display: flex; align-items: center; justify-content: center;
+      text-align: center;
+      overflow: hidden;
+      margin-top: 0;
+    }
+ 
+    /* Subtle mandala BG */
+     .hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("assets/img/banner1.jpg") center/cover no-repeat;
+  z-index: 0;
+}
+ 
+    .hero-content { position: relative; z-index: 2; padding: 0 1rem; }
+    .hero-eyebrow {
+      font-family: 'Cinzel', serif;
+      color: var(--gold);
+      font-size: 0.75rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      margin-bottom: 1.2rem;
+      display: flex; align-items: center; justify-content: center; gap: 1rem;
+    }
+    .hero-eyebrow::before, .hero-eyebrow::after {
+      content: '';
+      display: block; width: 50px; height: 1px;
+      background: linear-gradient(90deg, transparent, var(--gold));
+    }
+    .hero-eyebrow::after { background: linear-gradient(90deg, var(--gold), transparent); }
+ 
+    .hero h1 {
+      font-family: 'Cinzel Decorative', serif;
+      color: var(--white);
+      font-size: clamp(2.2rem, 5.5vw, 4rem);
+      line-height: 1.15;
+      margin-bottom: 0.5rem;
+      text-shadow: 0 4px 30px rgba(0,0,0,0.4);
+    }
+    .hero h1 span { color: var(--gold-light); }
+ 
+    .hero-subtitle {
+      color: rgba(255,255,255,0.7);
+      font-size: clamp(1rem, 2vw, 1.25rem);
+      font-style: italic;
+      margin-bottom: 2rem;
+      font-weight: 300;
+    }
+ 
+    .hero-stats {
+      display: flex; align-items: center; justify-content: center; gap: 2.5rem;
+      flex-wrap: wrap;
+    }
+    .stat {
+      text-align: center;
+    }
+    .stat-num {
+      font-family: 'Cinzel', serif;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--gold);
+      line-height: 1;
+    }
+    .stat-label {
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.6);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-family: 'Cinzel', serif;
+      margin-top: 0.2rem;
+    }
+    .stat-divider { width: 1px; height: 40px; background: rgba(201,168,76,0.35); }
+ 
+    /* scroll arrow */
+    .scroll-down {
+      position: absolute; bottom: 28px; left: 50%; transform: translateX(-50%);
+      color: rgba(255,255,255,0.45);
+      font-size: 1.3rem;
+      animation: bounce 2s infinite;
+      cursor: pointer;
+    }
+    @keyframes bounce {
+      0%,100%{ transform: translateX(-50%) translateY(0); }
+      50%{ transform: translateX(-50%) translateY(8px); }
+    }
+ 
+    /* ─── SECTION WRAPPER ─── */
+    .section { padding: 90px 5%; }
+    .section-header { text-align: center; margin-bottom: 60px; }
+    .section-eyebrow {
+      font-family: 'Cinzel', serif;
+      font-size: 0.72rem;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.8rem;
+      display: flex; align-items: center; justify-content: center; gap: 0.8rem;
+    }
+    .section-eyebrow::before,.section-eyebrow::after {
+      content:''; width:36px; height:1px; background:var(--gold); opacity:.5;
+    }
+    .section-title {
+      font-family: 'Cinzel Decorative', serif;
+      font-size: clamp(1.6rem, 3.5vw, 2.5rem);
+      color: var(--blue-deep);
+      margin-bottom: 1rem;
+    }
+    .section-desc {
+      color: var(--grey-text);
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 0 auto;
+      font-style: italic;
+      font-weight: 300;
+    }
+ 
+    /* ─── FILTER TABS ─── */
+    .filter-bar {
+      display: flex; flex-wrap: wrap; gap: 0.7rem;
+      justify-content: center; margin-bottom: 56px;
+    }
+    .filter-btn {
+      font-family: 'Cinzel', serif;
+      font-size: 0.72rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      padding: 0.6rem 1.5rem;
+      border: 1.5px solid var(--grey-light);
+      background: var(--white);
+      color: var(--grey-text);
+      border-radius: 2px;
+      cursor: pointer;
+      transition: all 0.25s;
+    }
+    .filter-btn:hover { border-color: var(--blue-light); color: var(--blue-mid); }
+    .filter-btn.active {
+      background: var(--blue-deep);
+      border-color: var(--blue-deep);
+      color: var(--gold-light);
+    }
+ 
+    /* ─── HOTELS GRID ─── */
+    .hotels-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 2rem;
+      max-width: 1300px;
+      margin: 0 auto;
+    }
+ 
+    /* ─── HOTEL CARD ─── */
+    .hotel-card {
+      background: var(--white);
+      border-radius: 4px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(11,31,75,0.08);
+      transition: box-shadow 0.35s, transform 0.35s;
+      position: relative;
+    }
+    .hotel-card:hover {
+      box-shadow: var(--shadow-blue);
+      transform: translateY(-6px);
+    }
+ 
+    /* image wrapper */
+    .card-img-wrap {
+      position: relative;
+      height: 240px;
+      overflow: hidden;
+    }
+    .card-img-wrap img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), filter 0.4s;
+      filter: brightness(0.9);
+    }
+    .hotel-card:hover .card-img-wrap img {
+      transform: scale(1.1);
+      filter: brightness(1);
+    }
+ 
+    /* image overlay on hover */
+    .card-img-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(180deg, transparent 30%, rgba(11,31,75,0.65) 100%);
+      opacity: 0;
+      transition: opacity 0.4s;
+      display: flex; align-items: flex-end; padding: 1.2rem;
+    }
+    .hotel-card:hover .card-img-overlay { opacity: 1; }
+    .overlay-view-btn {
+      font-family: 'Cinzel', serif;
+      font-size: 0.68rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--white);
+      border: 1px solid rgba(255,255,255,0.6);
+      padding: 0.45rem 1.1rem;
+      border-radius: 2px;
+      cursor: pointer;
+      transition: background 0.2s, border-color 0.2s;
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(4px);
+    }
+    .overlay-view-btn:hover { background: rgba(255,255,255,0.2); border-color: var(--gold); color: var(--gold-light); }
+ 
+    /* badge */
+    .card-badge {
+      position: absolute; top: 16px; left: 16px;
+      font-family: 'Cinzel', serif;
+      font-size: 0.62rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      padding: 0.3rem 0.8rem;
+      border-radius: 2px;
+      font-weight: 700;
+      z-index: 2;
+    }
+    .badge-luxury { background: var(--gold); color: var(--blue-deep); }
+    .badge-budget { background: var(--blue-deep); color: var(--gold-light); }
+    .badge-premium { background: #2d6a4f; color: #b7e4c7; }
+    .badge-new { background: #7b2d8b; color: #e9d5f5; }
+ 
+    /* wishlist icon */
+    .card-wish {
+      position: absolute; top: 14px; right: 14px;
+      width: 34px; height: 34px;
+      background: rgba(255,255,255,0.92);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer;
+      z-index: 2;
+      transition: background 0.2s, transform 0.2s;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+    .card-wish:hover { background: var(--white); transform: scale(1.12); }
+    .card-wish i { font-size: 0.85rem; color: #d9534f; }
+ 
+    /* rating ribbon */
+    .card-rating {
+      position: absolute; bottom: 0; right: 0;
+      background: var(--blue-deep);
+      color: var(--gold-light);
+      font-family: 'Cinzel', serif;
+      font-size: 0.85rem;
+      font-weight: 700;
+      padding: 0.3rem 0.7rem;
+      border-top-left-radius: 4px;
+      display: flex; align-items: center; gap: 0.3rem;
+    }
+    .card-rating i { font-size: 0.65rem; color: var(--gold); }
+ 
+    /* card body */
+    .card-body { padding: 1.4rem 1.4rem 1rem; }
+    .card-dham {
+      font-family: 'Cinzel', serif;
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--blue-bright);
+      margin-bottom: 0.4rem;
+      display: flex; align-items: center; gap: 0.4rem;
+    }
+    .card-dham i { font-size: 0.6rem; }
+    .card-name {
+      font-family: 'Cinzel', serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--blue-deep);
+      margin-bottom: 0.4rem;
+      line-height: 1.25;
+    }
+    .card-location {
+      font-size: 0.9rem;
+      color: var(--grey-text);
+      margin-bottom: 0.9rem;
+      display: flex; align-items: center; gap: 0.35rem;
+    }
+    .card-location i { font-size: 0.75rem; color: var(--gold); }
+ 
+    /* amenities */
+    .card-amenities {
+      display: flex; flex-wrap: wrap; gap: 0.5rem;
+      margin-bottom: 1.1rem;
+    }
+    .amenity {
+      font-size: 0.75rem;
+      color: var(--grey-text);
+      background: var(--off-white);
+      border: 1px solid var(--grey-light);
+      padding: 0.25rem 0.6rem;
+      border-radius: 20px;
+      display: flex; align-items: center; gap: 0.3rem;
+    }
+    .amenity i { font-size: 0.65rem; color: var(--blue-light); }
+ 
+    /* card footer */
+    .card-footer {
+      border-top: 1px solid var(--grey-light);
+      padding: 1rem 1.4rem;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .price-wrap {}
+    .price-from {
+      font-size: 0.72rem;
+      color: var(--grey-text);
+      font-family: 'Cinzel', serif;
+      letter-spacing: 0.05em;
+    }
+    .price-num {
+      font-family: 'Cinzel', serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--blue-deep);
+      line-height: 1;
+    }
+    .price-num span { font-size: 0.8rem; color: var(--grey-text); font-weight: 400; }
+    .book-btn {
+      font-family: 'Cinzel', serif;
+      font-size: 0.68rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      background: var(--grey-text);
+      color: var(--gold-light);
+      border: none;
+      padding: 0.65rem 1.3rem;
+      border-radius: 2px;
+      cursor: pointer;
+      transition: background 0.25s, transform 0.2s, box-shadow 0.25s;
+    }
+    .book-btn:hover {
+      background: var(--blue-bright);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 14px rgba(34,86,199,0.35);
+    }
+ 
+    /* ─── FEATURED (wide card) ─── */
+    .hotel-card.featured {
+      grid-column: 1 / -1;
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+    }
+    .hotel-card.featured .card-img-wrap { height: 100%; min-height: 300px; }
+    .hotel-card.featured .card-right { display: flex; flex-direction: column; }
+    .hotel-card.featured .card-body { flex: 1; }
+ 
+    /* ─── DHAM SECTIONS with dividers ─── */
+    .dham-section { margin-bottom: 80px; }
+    .dham-header {
+      display: flex; align-items: center; gap: 1.2rem;
+      margin-bottom: 2.2rem;
+    }
+    .dham-icon {
+      width: 54px; height: 54px;
+      background: var(--blue-deep);
+      border-radius: 2px;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .dham-icon i { font-size: 1.4rem; color: var(--gold); }
+    .dham-title {
+      font-family: 'Cinzel', serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--blue-deep);
+    }
+    .dham-altitude {
+      font-size: 0.85rem;
+      color: var(--grey-text);
+      font-style: italic;
+    }
+    .dham-line {
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(90deg, var(--grey-light), transparent);
+    }
+ 
+    /* ─── PERKS STRIP ─── */
+    .perks-strip {
+      background: var(--blue-deep);
+      padding: 50px 5%;
+    }
+    .perks-inner {
+      max-width: 1100px; margin: 0 auto;
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+    }
+    .perk {
+      display: flex; flex-direction: column; align-items: center;
+      text-align: center; gap: 0.8rem;
+    }
+    .perk-icon {
+      width: 56px; height: 56px;
+      border: 1.5px solid rgba(201,168,76,0.4);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .perk-icon i { font-size: 1.3rem; color: var(--gold); }
+    .perk-title {
+      font-family: 'Cinzel', serif;
+      font-size: 0.85rem;
+      color: var(--white);
+      font-weight: 600;
+      letter-spacing: 0.05em;
+    }
+    .perk-desc { font-size: 0.88rem; color: rgba(255,255,255,0.55); line-height: 1.5; }
+ 
+    /* ─── TESTIMONIALS ─── */
+    .testimonials-bg { background: var(--off-white); }
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.6rem;
+      max-width: 1100px; margin: 0 auto;
+    }
+    .testi-card {
+      background: var(--white);
+      border-radius: 4px;
+      padding: 1.8rem;
+      box-shadow: 0 2px 14px rgba(11,31,75,0.07);
+      border-top: 3px solid var(--gold);
+      position: relative;
+    }
+    .testi-quote {
+      font-size: 3rem;
+      color: var(--gold-pale);
+      font-family: Georgia, serif;
+      line-height: 1;
+      position: absolute;
+      top: 10px; right: 18px;
+    }
+    .testi-stars { color: var(--gold); font-size: 0.85rem; margin-bottom: 0.9rem; }
+    .testi-text {
+      font-size: 1rem;
+      line-height: 1.7;
+      color: #444;
+      font-style: italic;
+      margin-bottom: 1.2rem;
+    }
+    .testi-author { display: flex; align-items: center; gap: 0.8rem; }
+    .testi-avatar {
+      width: 42px; height: 42px; border-radius: 50%;
+      background: var(--blue-deep);
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Cinzel', serif;
+      color: var(--gold);
+      font-size: 0.95rem;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .testi-name { font-family: 'Cinzel', serif; font-size: 0.85rem; color: var(--blue-deep); font-weight: 600; }
+    .testi-dham { font-size: 0.78rem; color: var(--grey-text); }
+ 
+    /* ─── BOOKING BANNER ─── */
+    .booking-banner {
+      background: linear-gradient(160deg, #1ab0f0 0%, #0fa3e8 40%, #0d9bde 75%, #18ace9 100%);
+      padding: 80px 5%;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .booking-banner::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse 60% 80% at 50% 100%, rgba(201,168,76,0.1) 0%, transparent 70%);
+    }
+    .booking-banner h2 {
+      font-family: 'Cinzel Decorative', serif;
+      color: var(--white);
+      font-size: clamp(1.5rem, 3vw, 2.2rem);
+      margin-bottom: 0.8rem;
+      position: relative;
+    }
+    .booking-banner p {
+      color: rgba(255,255,255,0.65);
+      font-size: 1.1rem;
+      font-style: italic;
+      margin-bottom: 2.2rem;
+      position: relative;
+    }
+    .banner-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; position: relative; }
+    .btn-gold {
+      font-family: 'Cinzel', serif;
+      font-size: 0.78rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      background: var(--gold);
+      color: var(--blue-deep);
+      padding: 0.85rem 2.2rem;
+      border-radius: 2px;
+      border: none;
+      cursor: pointer;
+      font-weight: 700;
+      transition: background 0.25s, transform 0.2s, box-shadow 0.25s;
+    }
+    .btn-gold:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: var(--shadow-gold); }
+    .btn-outline {
+      font-family: 'Cinzel', serif;
+      font-size: 0.78rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      background: transparent;
+      color: var(--white);
+      padding: 0.85rem 2.2rem;
+      border-radius: 2px;
+      border: 1.5px solid rgba(255,255,255,0.4);
+      cursor: pointer;
+      font-weight: 600;
+      transition: border-color 0.25s, background 0.25s;
+    }
+    .btn-outline:hover { border-color: var(--gold); color: var(--gold-light); background: rgba(255,255,255,0.05); }
+ 
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 900px) {
+      .hotel-card.featured { grid-template-columns: 1fr; }
+      .hotel-card.featured .card-img-wrap { height: 260px; }
+      .nav-links { display: none; }
+    }
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 1.9rem; }
+      .hero-stats { gap: 1.5rem; }
+      .stat-divider { display: none; }
+      .section { padding: 60px 4%; }
+      .hotels-grid { grid-template-columns: 1fr; }
+    }
+ 
+    /* ─── LOAD ANIMATION ─── */
+    .hotel-card {
+      opacity: 0;
+      transform: translateY(24px);
+      animation: fadeUp 0.55s forwards;
+    }
+    @keyframes fadeUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .hotel-card:nth-child(1){ animation-delay: 0.05s; }
+    .hotel-card:nth-child(2){ animation-delay: 0.15s; }
+    .hotel-card:nth-child(3){ animation-delay: 0.25s; }
+    .hotel-card:nth-child(4){ animation-delay: 0.10s; }
+    .hotel-card:nth-child(5){ animation-delay: 0.20s; }
+    .hotel-card:nth-child(6){ animation-delay: 0.30s; }
+  </style>
+</head>
+
+<body class="tt-magic-cursor">
+
+    <div id="magic-cursor">
+        <div id="ball"></div>
+    </div>
+
+    <!-- Back To Top -->
+    <div class="progress-wrap">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+        </svg>
+        <svg class="arrow" width="22" height="25" viewBox="0 0 24 23" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M0.556131 11.4439L11.8139 0.186067L13.9214 2.29352L13.9422 20.6852L9.70638 20.7061L9.76793 8.22168L3.6064 14.4941L0.556131 11.4439Z"/>
+            <path d="M23.1276 11.4999L16.0288 4.40105L15.9991 10.4203L20.1031 14.5243L23.1276 11.4999Z"/>
+        </svg>
+    </div>
+
+    <!-- header Section Start-->
+<div class="top-offer-text-slider-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="top-offer-text-slider-wrap">
+                        <div class="slider-btn top-offer-text-slider-prev">
+                            <svg width="11" height="12" viewBox="0 0 11 12" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.42865 10.4085C8.69396 8.57179 5.02049 6.73505 2.81641 6.00036C5.02049 5.26567 8.32661 4.16363 9.42865 1.5922" stroke-width="2" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <div class="swiper top-offer-text-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="travel-package-01.html">Easy Booking, Get Up to<strong>Best Deals</strong> on Char Dham Yatra Packages</a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">Customize Your Yatra & Get<strong>Best Deals</strong> Instantly</a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">Enjoy Family Holiday Packages with <strong>Flexible Payment Options</strong></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-btn top-offer-text-slider-next">
+                            <svg width="11" height="12" viewBox="0 0 11 12" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1.57141 10.4085C2.3061 8.57179 5.97957 6.73505 8.18366 6.00036C5.97957 5.26567 2.67345 4.16363 1.57141 1.5922" stroke-width="2" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="header-area style-2">
+
+        <div class="container-fluid d-flex flex-nowrap align-items-center justify-content-between">
+            <div class="logo-and-menu-area">
+                <a href="/" class="header-logo">
+                    <img src="assets/img/header-logo1.jpg" alt="">
+                </a>
+                <div class="main-menu">
+                    <div class="mobile-logo-area d-xl-none d-flex align-items-center justify-content-between">
+                        <a href="/" class="mobile-logo-wrap">
+                            <img src="assets/img/header-logo1.jpg" alt="">
+                        </a>
+                        <div class="menu-close-btn">
+                            <i class="bi bi-x"></i>
+                        </div>
+                    </div>
+                    <ul class="menu-list">
+                        <li class="menu-item-has-children active">
+                            <a href="/" class="drop-down">
+                                Home
+                            </a>
+                            
+                          
+                        </li>
+                        <li class="menu-item-has-children position-inherit">
+                            <a href="/destination" class="drop-down">
+                                Destination
+                            </a>
+                          
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="/activity" class="drop-down">
+                                Activities
+                                
+                            </a>
+                          
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="trip-type.html" class="drop-down">
+                               Trip Types
+                            </a>
+                          
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="/hotels" class="drop-down">
+                               Our Hotels
+                                
+                            </a>
+                           
+                           
+                        </li>
+                        <li><a href="/gallery">Gallery</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+              
+                       
+                </div>
+            </div>
+            <div class="nav-right">
+                <div class="contact-and-search-area">
+                    <div class="contact-area d-xl-flex d-none">
+                        <div class="icon">
+                            <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <path
+                                        d="M15.5646 11.7424L13.3317 9.50954C12.5343 8.7121 11.1786 9.03111 10.8596 10.0678C10.6204 10.7855 9.82296 11.1842 9.10526 11.0247C7.51037 10.626 5.35726 8.55261 4.95854 6.87797C4.71931 6.16024 5.19778 5.36279 5.91548 5.12359C6.95216 4.80461 7.27113 3.44895 6.47369 2.65151L4.24084 0.418659C3.60288 -0.139553 2.64595 -0.139553 2.08774 0.418659L0.572591 1.93381C-0.942555 3.5287 0.73208 7.75516 4.48007 11.5032C8.22807 15.2512 12.4545 17.0056 14.0494 15.4106L15.5646 13.8955C16.1228 13.2575 16.1228 12.3006 15.5646 11.7424Z"/>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="content">
+                            <span>Need Help?</span>
+                            <a href="tel:918755588223">+91 8755-588-223</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <a href="#" class="primary-btn1 black-bg d-xl-flex d-none">
+                    <span>
+                
+                        BOOK NOW
+                    </span>
+                    <span>
+                        
+                        BOOK NOW
+                    </span>
+                </a>
+                <div class="sidebar-button mobile-menu-btn">
+                    <svg width="20" height="18" viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.29445 2.8421H10.5237C11.2389 2.8421 11.8182 2.2062 11.8182 1.42105C11.8182 0.635903 11.2389 0 10.5237 0H1.29445C0.579249 0 0 0.635903 0 1.42105C0 2.2062 0.579249 2.8421 1.29445 2.8421Z"></path>
+                        <path d="M1.23002 10.421H18.77C19.4496 10.421 20 9.78506 20 8.99991C20 8.21476 19.4496 7.57886 18.77 7.57886H1.23002C0.550421 7.57886 0 8.21476 0 8.99991C0 9.78506 0.550421 10.421 1.23002 10.421Z"></path>
+                        <path d="M18.8052 15.1579H10.2858C9.62563 15.1579 9.09094 15.7938 9.09094 16.5789C9.09094 17.3641 9.62563 18 10.2858 18H18.8052C19.4653 18 20 17.3641 20 16.5789C20 15.7938 19.4653 15.1579 18.8052 15.1579Z"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- header Section End-->
+
+<!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-eyebrow">Sacred Accommodations</div>
+      <h1>Hotels & <span>Dharamshalas</span></h1>
+      <p class="hero-subtitle">Handpicked stays across all four divine dhams</p>
+      <div class="hero-stats">
+        <div class="stat">
+          <div class="stat-num">80+</div>
+          <div class="stat-label">Hotels</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <div class="stat-num">4</div>
+          <div class="stat-label">Dhams</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <div class="stat-num">4.8★</div>
+          <div class="stat-label">Avg Rating</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <div class="stat-num">12K+</div>
+          <div class="stat-label">Pilgrims Served</div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-down" onclick="document.getElementById('hotels-main').scrollIntoView({behavior:'smooth'})">
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+ 
+  <!-- HOTELS MAIN -->
+  <section class="section" id="hotels-main">
+    <div class="section-header">
+      <div class="section-eyebrow">Our Collection</div>
+      <h2 class="section-title">Choose Your Sacred Stay</h2>
+      <p class="section-desc">Comfort and spirituality blended — from budget dharamshalas to luxury retreats</p>
+    </div>
+ 
+    <!-- FILTER BAR -->
+    <div class="filter-bar">
+      <button class="filter-btn active" onclick="filterCards(this,'all')">All Hotels</button>
+      <button class="filter-btn" onclick="filterCards(this,'kedarnath')">Kedarnath</button>
+      <button class="filter-btn" onclick="filterCards(this,'badrinath')">Badrinath</button>
+      <button class="filter-btn" onclick="filterCards(this,'gangotri')">Gangotri</button>
+      <button class="filter-btn" onclick="filterCards(this,'yamunotri')">Yamunotri</button>
+      <button class="filter-btn" onclick="filterCards(this,'luxury')">Luxury</button>
+      <!-- <button class="filter-btn" onclick="filterCards(this,'budget')">Budget</button> -->
+    </div>
+ 
+    <!-- KEDARNATH -->
+    <div class="dham-section" data-dham="kedarnath">
+      <div class="dham-header">
+        <div class="dham-icon"><i class="fas fa-mountain"></i></div>
+        <div>
+          <div class="dham-title">Kedarnath</div>
+          <div class="dham-altitude">3,583 m above sea level · Lord Shiva</div>
+        </div>
+        <div class="dham-line"></div>
+      </div>
+ 
+      <div class="hotels-grid">
+        <!-- Featured Card -->
+        <div class="hotel-card featured" data-tags="kedarnath luxury">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1544198365-f5d60b6d8190?w=800&q=80" alt="Kedarnath luxury hotel" />
+            <div class="card-img-overlay">
+              <button class="overlay-view-btn"><i class="fas fa-images" style="margin-right:6px"></i>View Photos</button>
+            </div>
+            <span class="card-badge badge-luxury">Luxury</span>
+            <div class="card-wish"><i class="far fa-heart"></i></div>
+            <div class="card-rating"><i class="fas fa-star"></i> 4.9</div>
+          </div>
+          <div class="card-right">
+            <div class="card-body">
+              <div class="card-dham"><i class="fas fa-map-pin"></i>Kedarnath Dham</div>
+              <div class="card-name">The Himalayan Retreat Kedarnath</div>
+              <div class="card-location"><i class="fas fa-location-dot"></i> Gaurikund Road, 2 km from Base Camp</div>
+              <div class="card-amenities">
+                <span class="amenity"><i class="fas fa-wifi"></i>Free WiFi</span>
+                <span class="amenity"><i class="fas fa-utensils"></i>Sattvic Meals</span>
+                <span class="amenity"><i class="fas fa-fire"></i>Heater</span>
+                <span class="amenity"><i class="fas fa-spa"></i>Spa</span>
+                <span class="amenity"><i class="fas fa-concierge-bell"></i>24/7 Service</span>
+                <span class="amenity"><i class="fas fa-mountain"></i>Valley View</span>
+              </div>
+              <p style="color:var(--grey-text);font-size:0.97rem;line-height:1.7;">A premium mountain retreat offering panoramic Himalayan views, warm interiors, and curated spiritual experiences for the devoted pilgrim.</p>
+            </div>
+            <div class="card-footer">
+              <div class="price-wrap">
+                <div class="price-from">Starting from</div>
+                <div class="price-num">₹4,500 <span>/ night</span></div>
+              </div>
+              <button class="book-btn">Book Now</button>
+            </div>
+          </div>
+        </div>
+ 
+        <div class="hotel-card" data-tags="kedarnath budget">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" alt="Budget stay Kedarnath" />
+            <div class="card-img-overlay">
+              <button class="overlay-view-btn"><i class="fas fa-images" style="margin-right:6px"></i>View Photos</button>
+            </div>
+            <span class="card-badge badge-budget">Budget Stay</span>
+            <div class="card-wish"><i class="far fa-heart"></i></div>
+            <div class="card-rating"><i class="fas fa-star"></i> 4.5</div>
+          </div>
+          <div class="card-body">
+            <div class="card-dham"><i class="fas fa-map-pin"></i>Kedarnath Dham</div>
+            <div class="card-name">Shiv Dham Dharamshala</div>
+            <div class="card-location"><i class="fas fa-location-dot"></i> Near Gaurikund Bus Stand</div>
+            <div class="card-amenities">
+              <span class="amenity"><i class="fas fa-bed"></i>Blankets</span>
+              <span class="amenity"><i class="fas fa-utensils"></i>Meals Available</span>
+              <span class="amenity"><i class="fas fa-fire"></i>Heater</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="price-wrap">
+              <div class="price-from">Starting from</div>
+              <div class="price-num">₹800 <span>/ night</span></div>
+            </div>
+            <button class="book-btn">Book Now</button>
+          </div>
+        </div>
+ 
+        <div class="hotel-card" data-tags="kedarnath premium">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=600&q=80" alt="Premium hotel Kedarnath" />
+            <div class="card-img-overlay">
+              <button class="overlay-view-btn"><i class="fas fa-images" style="margin-right:6px"></i>View Photos</button>
+            </div>
+            <span class="card-badge badge-premium">Premium</span>
+            <div class="card-wish"><i class="far fa-heart"></i></div>
+            <div class="card-rating"><i class="fas fa-star"></i> 4.7</div>
+          </div>
+          <div class="card-body">
+            <div class="card-dham"><i class="fas fa-map-pin"></i>Kedarnath Dham</div>
+            <div class="card-name">Mandakini Valley Resort</div>
+            <div class="card-location"><i class="fas fa-location-dot"></i> Sitapur Village, Kedarnath Road</div>
+            <div class="card-amenities">
+              <span class="amenity"><i class="fas fa-wifi"></i>WiFi</span>
+              <span class="amenity"><i class="fas fa-car"></i>Pickup Drop</span>
+              <span class="amenity"><i class="fas fa-fire"></i>Heater</span>
+              <span class="amenity"><i class="fas fa-leaf"></i>Organic Food</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="price-wrap">
+              <div class="price-from">Starting from</div>
+              <div class="price-num">₹2,800 <span>/ night</span></div>
+            </div>
+            <button class="book-btn">Book Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- BADRINATH -->
+    <div class="dham-section" data-dham="badrinath">
+      <div class="dham-header">
+        <div class="dham-icon" style="background:#1a5276"><i class="fas fa-gopuram"></i></div>
+        <div>
+          <div class="dham-title">Badrinath</div>
+          <div class="dham-altitude">3,133 m above sea level · Lord Vishnu</div>
+        </div>
+        <div class="dham-line"></div>
+      </div>
+ 
+      <div class="hotels-grid">
+        <div class="hotel-card" data-tags="badrinath luxury">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=600&q=80" alt="Luxury hotel Badrinath" />
+            <div class="card-img-overlay">
+              <button class="overlay-view-btn"><i class="fas fa-images" style="margin-right:6px"></i>View Photos</button>
+            </div>
+            <span class="card-badge badge-luxury">Luxury</span>
+            <div class="card-wish"><i class="far fa-heart"></i></div>
+            <div class="card-rating"><i class="fas fa-star"></i> 4.8</div>
+          </div>
+          <div class="card-body">
+            <div class="card-dham"><i class="fas fa-map-pin"></i>Badrinath Dham</div>
+            <div class="card-name">Narayan Palace Hotel</div>
+            <div class="card-location"><i class="fas fa-location-dot"></i> Main Bazaar, Badrinath</div>
+            <div class="card-amenities">
+              <span class="amenity"><i class="fas fa-wifi"></i>WiFi</span>
+              <span class="amenity"><i class="fas fa-utensils"></i>Restaurant</span>
+              <span class="amenity"><i class="fas fa-snowflake"></i>Heated Rooms</span>
+              <span class="amenity"><i class="fas fa-eye"></i>Temple View</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="price-wrap">
+              <div class="price-from">Starting from</div>
+              <div class="price-num">₹3,500 <span>/ night</span></div>
+            </div>
+            <button class="book-btn">Book Now</button>
+          </div>
+        </div>
+ 
+        <div class="hotel-card" data-tags="badrinath new">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1455587734955-081b22074882?w=600&q=80" alt="New hotel Badrinath" />
+            <div class="card-img-overlay">
+              <button class="overlay-view-btn"><i class="fas fa-images" style="margin-right:6px"></i>View Photos</button>
+            </div>
+            <span class="card-badge badge-new">New</span>
+            <div class="card-wish"><i class="far fa-heart"></i></div>
+            <div class="card-rating"><i class="fas fa-star"></i> 4.6</div>
+          </div>
+          <div class="card-body">
+            <div class="card-dham"><i class="fas fa-map-pin"></i>Badrinath Dham</div>
+            <div class="card-name">Alaknanda River Camp</div>
+            <div class="card-location"><i class="fas fa-location-dot"></i> Riverbank, 1 km from Temple</div>
+            <div class="card-amenities">
+              <span class="amenity"><i class="fas fa-campground"></i>River-side Camp</span>
+              <span class="amenity"><i class="fas fa-fire-flame-curved"></i>Bonfire</span>
+              <span class="amenity"><i class="fas fa-utensils"></i>Meals</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="price-wrap">
+              <div class="price-from">Starting from</div>
+              <div class="price-num">₹1,800 <span>/ night</span></div>
+            </div>
+            <button class="book-btn">Book Now</button>
+          </div>
+        </div>
+ 
+        <div class="hotel-card" data-tags="badrinath budget">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=600&q=80" alt="Budget stay Badrinath" />
+            <div class="card-img-overlay">
+              <button class="overlay-view-btn"><i class="fas fa-images" style="margin-right:6px"></i>View Photos</button>
+            </div>
+            <span class="card-badge badge-budget">Budget Stay</span>
+            <div class="card-wish"><i class="far fa-heart"></i></div>
+            <div class="card-rating"><i class="fas fa-star"></i> 4.4</div>
+          </div>
+          <div class="card-body">
+            <div class="card-dham"><i class="fas fa-map-pin"></i>Badrinath Dham</div>
+            <div class="card-name">Vishal Yatri Niwas</div>
+            <div class="card-location"><i class="fas fa-location-dot"></i> Near Hanuman Chatti</div>
+            <div class="card-amenities">
+              <span class="amenity"><i class="fas fa-bed"></i>Dormitory</span>
+              <span class="amenity"><i class="fas fa-shower"></i>Hot Water</span>
+              <span class="amenity"><i class="fas fa-utensils"></i>Prasad Meals</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="price-wrap">
+              <div class="price-from">Starting from</div>
+              <div class="price-num">₹600 <span>/ night</span></div>
+            </div>
+            <button class="book-btn">Book Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- GANGOTRI -->
+    <div class="dham-section" data-dham="gangotri">
+      <div class="dham-header">
+        <div class="dham-icon" style="background:#1a6b3c"><i class="fas fa-water"></i></div>
+        <div>
+          <div class="dham-title">Gangotri</div>
+          <div class="dham-altitude">3,048 m above sea level · Goddess Ganga</div>
+        </div>
+        <div class="dham-line"></div>
+      </div>
+      <div class="hotels-grid">
+        <div class="hotel-card" data-tags="gangotri premium">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=600&q=80" alt="Hotel Gangotri" />
+            <div class="card-img-overlay">
+              <button class="overlay-view-btn"><i class="fas fa-images" style="margin-right:6px"></i>View Photos</button>
+            </div>
+            <span class="card-badge badge-premium">Premium</span>
+            <div class="card-wish"><i class="far fa-heart"></i></div>
+            <div class="card-rating"><i class="fas fa-star"></i> 4.7</div>
+          </div>
+          <div class="card-body">
+            <div class="card-dham"><i class="fas fa-map-pin"></i>Gangotri Dham</div>
+            <div class="card-name">Ganga Lahari Resort</div>
+            <div class="card-location"><i class="fas fa-location-dot"></i> Gangotri Town, Near Temple</div>
+            <div class="card-amenities">
+              <span class="amenity"><i class="fas fa-wifi"></i>WiFi</span>
+              <span class="amenity"><i class="fas fa-water"></i>River View</span>
+              <span class="amenity"><i class="fas fa-leaf"></i>Ayurvedic Meals</span>
+              <span class="amenity"><i class="fas fa-fire"></i>Heated Rooms</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="price-wrap">
+              <div class="price-from">Starting from</div>
+              <div class="price-num">₹2,200 <span>/ night</span></div>
+            </div>
+            <button class="book-btn">Book Now</button>
+          </div>
+        </div>
+ 
+        <div class="hotel-card" data-tags="gangotri budget">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=600&q=80" alt="Budget hotel Gangotri" />
+            <div class="card-img-overlay">
+              <button class="overlay-view-btn"><i class="fas fa-images" style="margin-right:6px"></i>View Photos</button>
+            </div>
+            <span class="card-badge badge-budget">Budget Stay</span>
+            <div class="card-wish"><i class="far fa-heart"></i></div>
+            <div class="card-rating"><i class="fas fa-star"></i> 4.3</div>
+          </div>
+          <div class="card-body">
+            <div class="card-dham"><i class="fas fa-map-pin"></i>Gangotri Dham</div>
+            <div class="card-name">Bhagirathi Ashram Stay</div>
+            <div class="card-location"><i class="fas fa-location-dot"></i> Opposite Gangotri Temple Gate</div>
+            <div class="card-amenities">
+              <span class="amenity"><i class="fas fa-bed"></i>Clean Rooms</span>
+              <span class="amenity"><i class="fas fa-shower"></i>Hot Shower</span>
+              <span class="amenity"><i class="fas fa-utensils"></i>Langar</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="price-wrap">
+              <div class="price-from">Starting from</div>
+              <div class="price-num">₹700 <span>/ night</span></div>
+            </div>
+            <button class="book-btn">Book Now</button>
+          </div>
+        </div>
+ 
+        <div class="hotel-card" data-tags="gangotri luxury">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=600&q=80" alt="Luxury hotel Gangotri" />
+            <div class="card-img-overlay">
+              <button class="overlay-view-btn"><i class="fas fa-images" style="margin-right:6px"></i>View Photos</button>
+            </div>
+            <span class="card-badge badge-luxury">Luxury</span>
+            <div class="card-wish"><i class="far fa-heart"></i></div>
+            <div class="card-rating"><i class="fas fa-star"></i> 4.9</div>
+          </div>
+          <div class="card-body">
+            <div class="card-dham"><i class="fas fa-map-pin"></i>Gangotri Dham</div>
+            <div class="card-name">Devika Glacier Lodge</div>
+            <div class="card-location"><i class="fas fa-location-dot"></i> 3 km from Gangotri, Glacier Trail</div>
+            <div class="card-amenities">
+              <span class="amenity"><i class="fas fa-wifi"></i>WiFi</span>
+              <span class="amenity"><i class="fas fa-spa"></i>Wellness</span>
+              <span class="amenity"><i class="fas fa-mountain"></i>Glacier View</span>
+              <span class="amenity"><i class="fas fa-concierge-bell"></i>Butler</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="price-wrap">
+              <div class="price-from">Starting from</div>
+              <div class="price-num">₹5,500 <span>/ night</span></div>
+            </div>
+            <button class="book-btn">Book Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- YAMUNOTRI -->
+    <div class="dham-section" data-dham="yamunotri">
+      <div class="dham-header">
+        <div class="dham-icon" style="background:#6b3a1a"><i class="fas fa-sun"></i></div>
+        <div>
+          <div class="dham-title">Yamunotri</div>
+          <div class="dham-altitude">3,293 m above sea level · Goddess Yamuna</div>
+        </div>
+        <div class="dham-line"></div>
+      </div>
+      <div class="hotels-grid">
+        <div class="hotel-card" data-tags="yamunotri premium">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=600&q=80" alt="Yamunotri hotel" />
+            <div class="card-img-overlay">
+              <button class="overlay-view-btn"><i class="fas fa-images" style="margin-right:6px"></i>View Photos</button>
+            </div>
+            <span class="card-badge badge-premium">Premium</span>
+            <div class="card-wish"><i class="far fa-heart"></i></div>
+            <div class="card-rating"><i class="fas fa-star"></i> 4.6</div>
+          </div>
+          <div class="card-body">
+            <div class="card-dham"><i class="fas fa-map-pin"></i>Yamunotri Dham</div>
+            <div class="card-name">Yamuna Valley Retreat</div>
+            <div class="card-location"><i class="fas fa-location-dot"></i> Janki Chatti, Yamunotri</div>
+            <div class="card-amenities">
+              <span class="amenity"><i class="fas fa-wifi"></i>WiFi</span>
+              <span class="amenity"><i class="fas fa-car"></i>Taxi Service</span>
+              <span class="amenity"><i class="fas fa-utensils"></i>Veg Restaurant</span>
+              <span class="amenity"><i class="fas fa-fire"></i>Heater</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="price-wrap">
+              <div class="price-from">Starting from</div>
+              <div class="price-num">₹2,000 <span>/ night</span></div>
+            </div>
+            <button class="book-btn">Book Now</button>
+          </div>
+        </div>
+ 
+        <div class="hotel-card" data-tags="yamunotri budget">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1522798514-97ceb8c4f1c8?w=600&q=80" alt="Budget stay Yamunotri" />
+            <div class="card-img-overlay">
+              <button class="overlay-view-btn"><i class="fas fa-images" style="margin-right:6px"></i>View Photos</button>
+            </div>
+            <span class="card-badge badge-budget">Budget Stay</span>
+            <div class="card-wish"><i class="far fa-heart"></i></div>
+            <div class="card-rating"><i class="fas fa-star"></i> 4.2</div>
+          </div>
+          <div class="card-body">
+            <div class="card-dham"><i class="fas fa-map-pin"></i>Yamunotri Dham</div>
+            <div class="card-name">Surya Guest House</div>
+            <div class="card-location"><i class="fas fa-location-dot"></i> Barkot Town, near Yamunotri Road</div>
+            <div class="card-amenities">
+              <span class="amenity"><i class="fas fa-bed"></i>Rooms</span>
+              <span class="amenity"><i class="fas fa-shower"></i>Hot Water</span>
+              <span class="amenity"><i class="fas fa-utensils"></i>Home Food</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="price-wrap">
+              <div class="price-from">Starting from</div>
+              <div class="price-num">₹750 <span>/ night</span></div>
+            </div>
+            <button class="book-btn">Book Now</button>
+          </div>
+        </div>
+ 
+        <div class="hotel-card" data-tags="yamunotri luxury">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&q=80" alt="Luxury stay Yamunotri" />
+            <div class="card-img-overlay">
+              <button class="overlay-view-btn"><i class="fas fa-images" style="margin-right:6px"></i>View Photos</button>
+            </div>
+            <span class="card-badge badge-luxury">Luxury</span>
+            <div class="card-wish"><i class="far fa-heart"></i></div>
+            <div class="card-rating"><i class="fas fa-star"></i> 4.8</div>
+          </div>
+          <div class="card-body">
+            <div class="card-dham"><i class="fas fa-map-pin"></i>Yamunotri Dham</div>
+            <div class="card-name">The Sacred Springs Spa Resort</div>
+            <div class="card-location"><i class="fas fa-location-dot"></i> Hanumanchatti, Uttarkashi</div>
+            <div class="card-amenities">
+              <span class="amenity"><i class="fas fa-spa"></i>Thermal Spa</span>
+              <span class="amenity"><i class="fas fa-wifi"></i>WiFi</span>
+              <span class="amenity"><i class="fas fa-concierge-bell"></i>Premium Service</span>
+              <span class="amenity"><i class="fas fa-hot-tub-person"></i>Hot Spring</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="price-wrap">
+              <div class="price-from">Starting from</div>
+              <div class="price-num">₹6,000 <span>/ night</span></div>
+            </div>
+            <button class="book-btn">Book Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- PERKS STRIP -->
+  <div class="perks-strip">
+    <div class="perks-inner">
+      <div class="perk">
+        <div class="perk-icon"><i class="fas fa-shield-halved"></i></div>
+        <div class="perk-title">Verified Hotels</div>
+        <div class="perk-desc">All properties personally inspected and certified by our team</div>
+      </div>
+      <div class="perk">
+        <div class="perk-icon"><i class="fas fa-tag"></i></div>
+        <div class="perk-title">Best Price Guarantee</div>
+        <div class="perk-desc">We match any lower rate you find, no questions asked</div>
+      </div>
+      <div class="perk">
+        <div class="perk-icon"><i class="fas fa-headset"></i></div>
+        <div class="perk-title">24/7 Yatra Support</div>
+        <div class="perk-desc">Round-the-clock assistance throughout your sacred journey</div>
+      </div>
+      <div class="perk">
+        <div class="perk-icon"><i class="fas fa-rotate-left"></i></div>
+        <div class="perk-title">Free Cancellation</div>
+        <div class="perk-desc">Cancel up to 48 hours before with full refund</div>
+      </div>
+    </div>
+  </div>
+ 
+  <!-- TESTIMONIALS -->
+  <section class="section testimonials-bg">
+    <div class="section-header">
+      <div class="section-eyebrow">Pilgrim Reviews</div>
+      <h2 class="section-title">What Devotees Say</h2>
+      <p class="section-desc">Heartfelt words from lakhs of pilgrims who trusted us</p>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testi-card">
+        <div class="testi-quote">"</div>
+        <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p class="testi-text">The Himalayan Retreat was an absolute blessing. Warm rooms, sattvic food, and a stunning view of the Kedarnath peaks — couldn't have asked for more on this divine journey.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">RK</div>
+          <div>
+            <div class="testi-name">Ramesh Kumar</div>
+            <div class="testi-dham">Stayed at Kedarnath · May 2024</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-quote">"</div>
+        <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p class="testi-text">Narayan Palace had a direct temple view from the room window. Woke up to the sound of morning aarti — pure magic. The staff was helpful and respectful throughout.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">PS</div>
+          <div>
+            <div class="testi-name">Priya Sharma</div>
+            <div class="testi-dham">Stayed at Badrinath · June 2024</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-quote">"</div>
+        <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-stroke"></i></div>
+        <p class="testi-text">Ganga Lahari was perfect for our family of six. River-facing rooms, home-cooked meals, and the warmth of the hosts made Gangotri feel like our own home in the Himalayas.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">AG</div>
+          <div>
+            <div class="testi-name">Amit Gupta</div>
+            <div class="testi-dham">Stayed at Gangotri · July 2024</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- BOOKING BANNER -->
+  <section class="booking-banner">
+    <h2>Ready for Your Sacred Journey?</h2>
+    <p>Let us arrange every detail — from hotels to puja bookings — for your Rudransh Tour & Travels</p>
+    <div class="banner-btns">
+      <button class="btn-gold"><i class="fas fa-phone-volume" style="margin-right:8px"></i>Call Our Yatra Expert</button>
+      <button class="btn-outline"><i class="fas fa-envelope" style="margin-right:8px"></i>Get Custom Package</button>
+    </div>
+  </section>
+
+
+   
+ <!-- home2 Footer Section Start-->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-contact-wrap">
+              
+                <ul class="contact-area">
+                     <li class="single-contact">
+                        <div class="icon">
+                            <img src="assets/img/home1/icon/call-icon.svg" alt="">
+                        </div>
+                        <div class="content">
+                            <span>Call Us</span>
+                            <a href="tel:++918755588223">+91 8755588223</a>
+                        </div>
+                    </li>
+                      <li class="single-contact">
+                        <div class="icon">
+                            <img src="assets/img/home1/icon/call-icon.svg" alt="">
+                        </div>
+                        <div class="content">
+                            <span>Call Us</span>
+                            <a href="tel:++918006100222">+91 8006100222</a>
+                        </div>
+                    </li>
+                    <li class="single-contact">
+                        <div class="icon">
+                            <img src="assets/img/home1/icon/call-icon.svg" alt="">
+                        </div>
+                        <div class="content">
+                            <span>Call Us</span>
+                            <a href="tel:++91 79008 12727">+91 79008 12727</a>
+                        </div>
+                    </li>
+                      <li class="single-contact">
+                        <div class="icon">
+                            <img src="assets/img/home1/icon/mail-icon2.svg" alt="">
+                        </div>
+                        <div class="content">
+                            <span>Mail Us</span>
+                            <a href="mailto:info@rudransh.com">info@rudransh.com</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <svg class="divider" width="1320" height="6" viewBox="0 0 1320 6" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M5 2.5L0 0.113249V5.88675L5 3.5V2.5ZM1315 3.5L1320 5.88675V0.113249L1315 2.5V3.5ZM4.5 3.5H1315.5V2.5H4.5V3.5Z"/>
+            </svg>
+            <div class="footer-menu-wrap">
+                <div class="row gy-md-4 gy-5">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="footer-logo-and-addition-info">
+                           
+                              <div class="widget-title">
+                                <h5 style="color: #fff;">Rudransh Tour & Travels</h5>
+                            </div>
+                            <div class="address-area">
+                                
+                                <p style="color: var(--off-white);">At Rudransh Tour & Travels, we are committed to providing a seamless and spiritually enriching travel experience across the sacred Char Dham destinations — Kedarnath, Badrinath, Gangotri, and Yamunotri.
+
+                                </p>
+                            </div>
+                            <ul class="social-list">
+                                <li><a href="https://www.facebook.com/share/r/1AptnqpSjg/"><i class="bx bxl-facebook"></i></a></li>
+                                <!-- <li><a href="#"><i class="bx bxl-linkedin"></i></a></li> -->
+                                <!-- <li><a href="#"><i class="bx bxl-youtube"></i></a></li> -->
+                                <li><a href="https://www.instagram.com/rudransh_travels_?utm_source=qr&igsh=Z3g0a255MnZ0ZG5h"><i class="bx bxl-instagram-alt"></i></a></li>
+                            </ul>
+                           
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-md-end">
+                        <div class="footer-widget">
+                            <div class="widget-title">
+                                <h5>Top Destination</h5>
+                            </div>
+                            <ul class="widget-list">
+                                <li><a href="#">Uttarakhand</a></li>
+                                <li><a href="#">Haridwar</a></li>
+                                <li><a href="#">Dehradun</a></li>
+                                <li><a href="#">Rishikesh</a></li>
+                                <li><a href="#">Mussoorie</a></li>
+                                <li><a href="#">Dhanaulti</a></li>
+                                <li><a href="#">Nainital</a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-md-end">
+                        <div class="footer-widget">
+                            <div class="widget-title">
+                                <h5>Adventure Activities
+                                </h5>
+                            </div>
+                            <ul class="widget-list">
+                                <li><a href="#">City Tours
+                               </a></li>
+                                <li><a href="#">Hiking & Stiking</a></li>
+                                <li><a href="#">River Rafting</a></li>
+                                <li><a href="#">Jungle Safari</a></li>
+                                <li><a href="#">Trekking</a></li>
+                                <li><a href="#">Cycling</a></li>
+                               
+                                <li><a href="#">Boating</a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 d-flex justify-content-lg-end">
+                        <div class="footer-widget">
+                            <div class="widget-title">
+                                <h5>Resources</h5>
+                            </div>
+                            <ul class="widget-list">
+                                <li><a href="/">Home</a></li>
+                                
+                                <li><a href="/destination">Destination</a></li>
+                                <li><a href="/activity">Activities</a></li>
+                                <li><a href="trip-type.html">Trip Types</a></li>
+                                <li><a href="/hotels">Our Hotels</a></li>
+
+                                <li><a href="/gallery">Gallery</a></li>
+
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="copyright-and-payment-method-area">
+                    <p style="text-align: center;">2026 Rudransh Tour & Travels. All Rights Reserved.| Designed by <a href="https://pixelitservices.com/" target="_blank">Pixel IT Services</a></p>
+                  
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- home2 Footer Section End-->
+
+
+    <!--  Main jQuery  -->
+    <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/jquery-ui.js"></script>
+    <script src="assets/js/moment.min.js"></script>
+    <script src="assets/js/daterangepicker.min.js"></script>
+    
+    <!-- Popper and Bootstrap JS -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <!-- Swiper slider JS -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <!-- Waypoints JS -->
+    <script src="assets/js/waypoints.min.js"></script>
+    <!-- Counterup JS -->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!-- Wow JS -->
+    <script src="assets/js/wow.min.js"></script>
+    <!-- Gsap  JS -->
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/jquery.fancybox.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/select-dropdown.js"></script>
+    <script src="assets/js/custom.js"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"70834e4b23964a2eaf7cf4ec0e5e9a84","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+
+<script>
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+
+
+
+
+
+
+<script>
+    function filterCards(btn, tag) {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+ 
+      const dhamSections = document.querySelectorAll('.dham-section');
+ 
+      if (tag === 'all') {
+        dhamSections.forEach(s => s.style.display = 'block');
+        document.querySelectorAll('.hotel-card').forEach(c => {
+          c.style.display = '';
+          c.style.animation = 'none';
+          void c.offsetWidth;
+          c.style.animation = 'fadeUp 0.5s forwards';
+        });
+        return;
+      }
+ 
+      // Dham filter
+      if (['kedarnath','badrinath','gangotri','yamunotri'].includes(tag)) {
+        dhamSections.forEach(s => {
+          s.style.display = s.dataset.dham === tag ? 'block' : 'none';
+        });
+        document.querySelectorAll('.hotel-card').forEach(c => { c.style.display = ''; });
+        return;
+      }
+ 
+      // Type filter (luxury/budget/premium)
+      dhamSections.forEach(s => s.style.display = 'block');
+      document.querySelectorAll('.hotel-card').forEach(c => {
+        const tags = (c.dataset.tags || '').split(' ');
+        if (tags.includes(tag)) {
+          c.style.display = '';
+          c.style.animation = 'none';
+          void c.offsetWidth;
+          c.style.animation = 'fadeUp 0.5s forwards';
+        } else {
+          c.style.display = 'none';
+        }
+      });
+    }
+ 
+    // Wishlist toggle
+    document.querySelectorAll('.card-wish').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const icon = btn.querySelector('i');
+        icon.classList.toggle('far');
+        icon.classList.toggle('fas');
+        btn.style.transform = 'scale(1.3)';
+        setTimeout(() => btn.style.transform = '', 200);
+      });
+    });
+  </script>
+
+</body>
+
+
+
+</html>
