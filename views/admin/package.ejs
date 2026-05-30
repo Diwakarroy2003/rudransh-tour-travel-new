@@ -109,7 +109,12 @@ Dashboard
 
 <div class="card">
 
-<form action="/admin/package/add" method="POST"><form
+<!-- <form action="/admin/package/add" method="POST"><form
+  action="/admin/package/add"
+  method="POST"
+  enctype="multipart/form-data"
+> -->
+<form
   action="/admin/package/add"
   method="POST"
   enctype="multipart/form-data"
@@ -136,12 +141,13 @@ placeholder="Duration"
 required
 />
 
-<input
+<!-- <input
 type="text"
 name="image"
 placeholder="Image file name"
 required
-/><input
+/> -->
+<input
 type="file"
 name="image"
 accept="image/*"

@@ -379,10 +379,7 @@ app.get("/admin/package", checkAdmin, async (req, res) => {
   res.render("admin/package", { packages });
 });
 
-app.post("/admin/package/add", async (req, res) => {
-  await Package.create(req.body);
-
-  res.redirect("/admin/package");app.post(
+app.post(
   "/admin/package/add",
   upload.single("image"),
   async (req, res) => {
@@ -391,6 +388,7 @@ app.post("/admin/package/add", async (req, res) => {
         title: req.body.title,
         price: req.body.price,
         duration: req.body.duration,
+        description: req.body.description,
         image: req.file.filename,
       });
 
@@ -401,7 +399,6 @@ app.post("/admin/package/add", async (req, res) => {
     }
   }
 );
-});
 
 app.get("/admin/package/edit/:id", checkAdmin, async (req, res) => {
   const package = await Package.findById(req.params.id);
